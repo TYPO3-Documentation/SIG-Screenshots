@@ -7,11 +7,7 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-02-23T18:33:56+00:00" name="docsearch:modified"/>
-<link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-02-23T18:33:56+00:00" name="dc.modified"/>
-<meta content="2021-02-23T18:33:56+00:00" property="article:modified_time"/>
-<title>Notes of SIG Screenshots — SIG Screenshots 1.0.0 documentation</title>
+<title>Changed for puppeteer implementation — SIG Screenshots 1.0.0 documentation</title>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -20,7 +16,8 @@
 <link href="genindex.html" rel="index" title="Index"/>
 <link href="search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
-<link href="Install/Index.html" rel="next" title="INSTALL"/>
+<link href="genindex.html" rel="next" title="Index"/>
+<link href="Readme/Index.html" rel="prev" title="README"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="_static/js/modernizr.min.js"></script>
@@ -42,7 +39,7 @@
 <nav>
 <input class="toc-checkbox" id="toggleToc" type="checkbox"/>
 <div class="toc-header"><div class="toc-title">
-<a class="toc-title-project" href="#">SIG Screenshots</a></div><div class="toc-actions">
+<a class="toc-title-project" href="index.html">SIG Screenshots</a></div><div class="toc-actions">
 <label class="toc-toggle" for="toggleToc">
                                     Menu
                                 </label>
@@ -60,16 +57,23 @@
 <!-- /searchbox.html -->
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Install/Index.html">INSTALL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Readme/Index.html">README</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notes.html">Changed for puppeteer implementation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changed for puppeteer implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Notes of SIG Screenshots</a></li>
+<li><a class="reference internal" href="#">Changed for puppeteer implementation</a></li>
+<li><a class="reference internal" href="#todo-to-set-up-puppeteer">Todo to set up puppeteer</a><ul>
+<li><a class="reference internal" href="#after-running-dev-start">After running <code class="docutils literal notranslate"><span class="pre">dev</span> <span class="pre">start</span></code></a><ul>
+<li><a class="reference internal" href="#running-a-puppeteer-script">Running a Puppeteer Script</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -79,20 +83,21 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
-<a accesskey="n" class="no-focus" href="Install/Index.html" tabindex="-1"></a>
+<a accesskey="p" class="no-focus" href="Readme/Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="genindex.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="#">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Notes of SIG Screenshots</li>
+<li class="breadcrumb-item"><a href="index.html">Start</a></li>
+<li aria-current="page" class="breadcrumb-item active">Changed for puppeteer implementation</li>
 </ol>
 <div class="breadcrumb-additions">
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/index.rst" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Notes.rst" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="_sources/index.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="_sources/Notes.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -102,16 +107,45 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="notes-of-sig-screenshots">
-<h1>Notes of SIG Screenshots<a class="headerlink" href="#notes-of-sig-screenshots" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Install/Index.html">INSTALL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Readme/Index.html">README</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notes.html">Changed for puppeteer implementation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<div class="section" id="changed-for-puppeteer-implementation">
+<h1>Changed for puppeteer implementation<a class="headerlink" href="#changed-for-puppeteer-implementation" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Added config to <code class="docutils literal notranslate"><span class="pre">.ddev/config.yaml</span></code><ul>
+<li>Added packages, puppeteer needs to run headless chrome</li>
+<li>Added post-start hook that installs basic TYPO3 with user:
+<code class="docutils literal notranslate"><span class="pre">admin</span></code> with password <code class="docutils literal notranslate"><span class="pre">typo3.demo</span></code></li>
+<li>Added post-start hook to create puppeteer admin user:
+<code class="docutils literal notranslate"><span class="pre">pptr_admin</span></code> with same password</li>
 </ul>
+</li>
+<li>Added ddev command <code class="docutils literal notranslate"><span class="pre">puppeteer</span> <span class="pre">[filename]</span></code></li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">package.json</span></code> with dependency to puppeteer</li>
+<li>Added folder <code class="docutils literal notranslate"><span class="pre">Screenshots</span></code> to save created Images</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">puppeteer-testscript.js</span></code> which will collect some screenshots
+from the running DDEV instance</li>
+</ul>
+</div>
+<div class="section" id="todo-to-set-up-puppeteer">
+<h1>Todo to set up puppeteer<a class="headerlink" href="#todo-to-set-up-puppeteer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="after-running-dev-start">
+<h2>After running <code class="docutils literal notranslate"><span class="pre">dev</span> <span class="pre">start</span></code><a class="headerlink" href="#after-running-dev-start" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<img alt="DDEV creates Puppeteer users" src="_images/010_ddev_creates_pptr_users.png"/>
+<p class="caption"><span class="caption-text">DDEV creates Puppeteer users</span></p>
+</div>
+<p>So far so good, but when running <code class="docutils literal notranslate"><span class="pre">ddev</span> <span class="pre">restart</span></code> to start over and the
+users already exists, there will be an exitcode 1</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">Open</span> <span class="nx">Question</span><span class="o">:</span> <span class="nx">How</span> <span class="nx">to</span> <span class="nx">prevent</span> <span class="nx">exitcode</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">on</span> <span class="nx">already</span> <span class="nx">existing</span> <span class="nx">users</span><span class="o">?</span>
+</pre></div>
+</div>
+<div class="figure" id="id2">
+<img alt="DDEV creates Puppeteer users - Error on 2nd run" src="_images/011_ddev_creates_pptr_users_2.png"/>
+<p class="caption"><span class="caption-text">DDEV creates Puppeteer users - Error on 2nd run</span></p>
+</div>
+<div class="section" id="running-a-puppeteer-script">
+<h3>Running a Puppeteer Script<a class="headerlink" href="#running-a-puppeteer-script" title="Permalink to this headline">¶</a></h3>
+<p>work-in-progress</p>
+</div>
 </div>
 </div>
 <!-- /body -->
@@ -121,7 +155,12 @@
 <nav aria-label="Page navigation example">
 <ul class="pagination justify-content-center">
 <li class="page-item">
-<a class="page-link" href="Install/Index.html" title="Accesskey Alt(+Shift)+n">
+<a class="page-link" href="Readme/Index.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="genindex.html" title="Accesskey Alt(+Shift)+n">
                 Next
             </a>
 </li>
@@ -139,11 +178,6 @@
 <div class="frame-container">
 <div class="frame-inner">
 <div class="footer-additional">
-<p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/14ead6417dda10685e8d6a7c81f30123c878a625" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Feb 23, 2021 18:33
-                        </a>
-</p>
 <p class="text-center">Last rendered: Feb 23, 2021 18:34</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">

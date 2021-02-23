@@ -1,0 +1,42 @@
+{
+  "build_time": "2021-02-23 18:34:59",
+  "checksum": "25bd53ce1b256148f253838a5bd59c51",
+  "checksum_ttl_seconds": 604800,
+  "copyright": "2021",
+  "created": {
+    "html": 1
+  },
+  "description": "Notes of the special interest group",
+  "email_notify_about_new_build": [],
+  "emails_user_from_project": [],
+  "environ": {
+    "OUR_IMAGE": "t3docs/render-documentation:latest",
+    "OUR_IMAGE_SHORT": "t3rd",
+    "OUR_IMAGE_VERSION": "v2.7.2",
+    "THEME_MTIME": "1588954791",
+    "THEME_NAME": "unknown",
+    "THEME_VERSION": "unknown",
+    "TOOLCHAIN_VERSION": "2.11.1",
+    "TYPOSCRIPT_PY_VERSION": "v2.2.4"
+  },
+  "gitdir": "/PROJECT",
+  "has_neutralized_images": 0,
+  "has_neutralized_links": 0,
+  "localization": "default",
+  "postprocessed_html_files": 7,
+  "project": "SIG Screenshots",
+  "publish_dir": "project/0.0.0",
+  "release": "1.0.0",
+  "sitemap_files_html_count": 7,
+  "t3author": "TYPO3 Documentation SIG Screenshots",
+  "ter_extension": "0",
+  "theme_info": {
+    "build_mtime": "1611167919",
+    "module_name": "sphinx_typo3_theme",
+    "version_scm": "4.4.3",
+    "version_scm_build": "",
+    "version_scm_core": "4.4.3",
+    "version_scm_pre_release": ""
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,60 @@
+{
+   "std:doc": {
+      "Install/Index": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Install/Index.html", 
+         "INSTALL"
+      ], 
+      "Notes": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Notes.html", 
+         "Changed for puppeteer implementation"
+      ], 
+      "Readme/Index": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Readme/Index.html", 
+         "README"
+      ], 
+      "Targets/Targets": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Targets/Targets.html", 
+         "Link targets"
+      ], 
+      "genindex": [
+         "SIG Screenshots", 
+         "1.0", 
+         "genindex.html", 
+         "Index"
+      ], 
+      "index": [
+         "SIG Screenshots", 
+         "1.0", 
+         "index.html", 
+         "Notes of SIG Screenshots"
+      ]
+   }, 
+   "std:label": {
+      "link-targets": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Targets/Targets.html#link-targets", 
+         "Link targets"
+      ], 
+      "modindex": [
+         "SIG Screenshots", 
+         "1.0", 
+         "py-modindex.html", 
+         "Module Index"
+      ], 
+      "search": [
+         "SIG Screenshots", 
+         "1.0", 
+         "search.html", 
+         "Search Page"
+      ]
+   }
+}
