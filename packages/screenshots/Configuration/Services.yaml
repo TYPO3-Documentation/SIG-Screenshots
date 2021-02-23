@@ -1,9 +1,0 @@
-services:
-  _defaults:
-    autowire: true
-    autoconfigure: true
-    public: false
-  T3\Screenshots\Command\RecordMappingCommand:
-    tags:
-      - name: 'console.command'
-        command: 'screenshots:getmapping'
