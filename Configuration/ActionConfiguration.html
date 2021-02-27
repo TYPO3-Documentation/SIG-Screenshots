@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="SIG Screenshots" name="docsearch:name"/>
+<meta content="" name="docsearch:package_type"/>
+<meta content="1.0.0" name="docsearch:release"/>
+<meta content="1.0" name="docsearch:version"/>
+<meta content="2021-02-27T17:36:51+00:00" name="docsearch:modified"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
+<meta content="2021-02-27T17:36:51+00:00" name="dc.modified"/>
+<meta content="2021-02-27T17:36:51+00:00" property="article:modified_time"/>
+<title>Action configuration — SIG Screenshots 1.0.0 documentation</title>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<!-- linktags -->
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
+<link href="Index.html" rel="up" title="Configuration"/>
+<link href="FieldConfiguration.html" rel="next" title="Field configuration"/>
+<link href="SelectConfiguration.html" rel="prev" title="Select configuration"/>
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+<script src="../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<!-- pageheader -->
+<a class="logo" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../_static/img/typo3-logo.svg" width="484"/>
+</a>
+<!-- /pageheader -->
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../index.html">SIG Screenshots</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<!-- searchbox.html -->
+<div class="toc-search" id="searchbox" role="search">
+<form action="../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+<!-- /searchbox.html -->
+<div aria-label="main navigation" class="toc" role="navigation">
+<!-- menu -->
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Action configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Readme/Index.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notes.html">Changed for puppeteer implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+<ul>
+<li><a class="reference internal" href="#">Action configuration</a><ul>
+<li><a class="reference internal" href="#action-click">Action click</a></li>
+<li><a class="reference internal" href="#action-change">Action change</a></li>
+<li><a class="reference internal" href="#action-open">Action open</a></li>
+<li><a class="reference internal" href="#action-wait">Action wait</a></li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="SelectConfiguration.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="FieldConfiguration.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
+<li aria-current="page" class="breadcrumb-item active">Action configuration</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/ActionConfiguration.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/ActionConfiguration.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<!-- /breadcrumbs.html -->
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<!-- body -->
+<div class="section" id="action-configuration">
+<span id="id1"></span><h1>Action configuration<a class="headerlink" href="#action-configuration" title="Permalink to this headline">¶</a></h1>
+<p>The action configuration is an object with the following parameters:</p>
+<dl class="confval">
+<dt id="confval-action">
+<code class="descname">action</code><a class="headerlink" href="#confval-action" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>One of the following:</p>
+<dl class="docutils">
+<dt>click</dt>
+<dd>Click something</dd>
+<dt>change</dt>
+<dd>Change the value of a selector.</dd>
+<dt>open</dt>
+<dd>Open something, used with <span class="xref std std-ref">accordion</span>.</dd>
+<dt>wait</dt>
+<dd>Wait for something. Either used with a <code class="code docutils literal notranslate"><span class="pre">selector</span></code> to wait for
+or a <code class="code docutils literal notranslate"><span class="pre">timeout</span></code> in ms.</dd>
+</dl>
+</dd></dl>
+<div class="section" id="action-click">
+<h2>Action click<a class="headerlink" href="#action-click" title="Permalink to this headline">¶</a></h2>
+<p>This action clicks something. Is has the following properties:</p>
+<dl class="confval">
+<dt id="confval-button">
+<code class="descname">button</code><a class="headerlink" href="#confval-button" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Contains the text on the button to be clicked.</p>
+<p>Change the record type, wait for the expected modal dialog, then click <span class="guilabel">OK</span>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "change",
+      "select": "record_type",
+      "value": "0"
+   },
+   {
+      "action": "wait",
+      "selector": ".modal-dialog",
+      "options": {
+         "visible": true
+      }
+   },
+   {
+      "action": "click",
+      "button": "OK"
+   },
+]
+</pre></div>
+</div>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-select">
+<code class="descname">select</code><a class="headerlink" href="#confval-select" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Click a select field to reveal its content without changing it. Contains
+the name of the field.</p>
+<p>Open the select box of the Ctype field:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "click",
+      "select": "CType"
+   }
+]
+</pre></div>
+</div>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-tab">
+<code class="descname">tab</code><a class="headerlink" href="#confval-tab" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Click a tab in a record to take a screen of another tab. Contains
+the name of the field</p>
+<p>Switch to the tab <span class="guilabel">Access</span> by clicking it:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "click",
+      "tab": "Access"
+   }
+]
+</pre></div>
+</div>
+</dd></dl>
+</div>
+<div class="section" id="action-change">
+<h2>Action change<a class="headerlink" href="#action-change" title="Permalink to this headline">¶</a></h2>
+<p>This action changes something. Is has the following properties:</p>
+<dl class="confval">
+<dt id="confval-select">
+<code class="descname">select</code><a class="headerlink" href="#confval-select" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Change a select box by selecting a different value. Contains
+the name of the field.</p>
+<p>Open the select box of the Ctype field:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"change"</span><span class="p">,</span>
+   <span class="nt">"select"</span><span class="p">:</span> <span class="s2">"record_type"</span><span class="p">,</span>
+   <span class="nt">"value"</span><span class="p">:</span> <span class="s2">"0"</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+<div class="section" id="action-open">
+<h2>Action open<a class="headerlink" href="#action-open" title="Permalink to this headline">¶</a></h2>
+<p>This action opens something. Is has the following properties:</p>
+<dl class="confval">
+<dt id="confval-accordion">
+<code class="descname">accordion</code><a class="headerlink" href="#confval-accordion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Opens an accordion. In opposite to action <code class="code docutils literal notranslate"><span class="pre">click</span></code> it only opens
+the accordion if it is closed and doesn’t click it when its already
+opened. This prevents togglingh</p>
+<p>Contains a special value starting with <code class="code docutils literal notranslate"><span class="pre">@</span></code> or
+a selector.</p>
+<p>Special values:</p>
+<dl class="docutils">
+<dt><code class="code docutils literal notranslate"><span class="pre">@first</span></code></dt>
+<dd>open the first accordion you can find if it is closed.</dd>
+</dl>
+<p><strong>Example</strong></p>
+<p>Open the first accordion you can find. Then recursively open an
+accordion that is inside the first accordion:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "open",
+      "accordion": "@first"
+   },
+   {
+      "action": "open",
+      "accordion": ".form-irre-object .panel-collapse .form-irre-header-button"
+   }
+]
+</pre></div>
+</div>
+</dd></dl>
+</div>
+<div class="section" id="action-wait">
+<h2>Action wait<a class="headerlink" href="#action-wait" title="Permalink to this headline">¶</a></h2>
+<dl class="confval">
+<dt id="confval-timeout">
+<code class="descname">timeout</code><a class="headerlink" href="#confval-timeout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+<p>Wait for a timeout. Time in milli seconds. 1000 would be one second.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-selector">
+<code class="descname">selector</code><a class="headerlink" href="#confval-selector" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Wait for a selector. <code class="code docutils literal notranslate"><span class="pre">options</span></code> specify exactly what to wait for.
+Contains the selector</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-options">
+<code class="descname">options</code><a class="headerlink" href="#confval-options" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object</td>
+</tr>
+</tbody>
+</table>
+<p>Wait for the modal dialog to be visible:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+   "action": "wait",
+   "selector": ".modal-dialog",
+   "options": {
+      "visible": true
+   }
+},
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+<!-- /body -->
+</div>
+</div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="SelectConfiguration.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="FieldConfiguration.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
+<!-- /pager.html -->
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<!-- footer.html -->
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner">
+<div class="footer-additional">
+<p class="text-center">
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/3d80b7f24f8fbc3d7153c0c0ce578dd3727030c9" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Feb 27, 2021 17:36
+                        </a>
+</p>
+<p class="text-center">Last rendered: Feb 27, 2021 17:37</p>
+<p class="text-center">
+<a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
+                            TYPO3 Theme 4.4.3
+                        </a>
+</p>
+</div>
+<div class="footer-meta">
+<div class="footer-meta-copyright">
+                        © Copyright 2021
+                    </div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- /footer.html -->
+</div>
+</div>
+<script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: '../',
+            VERSION: '1.0.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+<script src="../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../_static/js/theme.min.js" type="text/javascript"></script>
+<script src="../_static/language_data.js" type="text/javascript"></script>
+<script src="../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+</body>
+</html>

@@ -1,5 +1,247 @@
 {
+   "std:confval": {
+      "[fieldname]": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SelectConfiguration.html#confval-[fieldname]", 
+         "-"
+      ], 
+      "accordion": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-accordion", 
+         "-"
+      ], 
+      "action": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-action", 
+         "-"
+      ], 
+      "actions": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-actions", 
+         "-"
+      ], 
+      "button": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-button", 
+         "-"
+      ], 
+      "by": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SelectConfiguration.html#confval-by", 
+         "-"
+      ], 
+      "caption": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-caption", 
+         "-"
+      ], 
+      "comments": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ConfigFile.html#confval-comments", 
+         "-"
+      ], 
+      "extension": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-extension", 
+         "-"
+      ], 
+      "extensions": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ConfigFile.html#confval-extensions", 
+         "-"
+      ], 
+      "field": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/FieldConfiguration.html#confval-field", 
+         "-"
+      ], 
+      "fields": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html#confval-fields", 
+         "-"
+      ], 
+      "filename": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-filename", 
+         "-"
+      ], 
+      "modules": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-modules", 
+         "-"
+      ], 
+      "options": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-options", 
+         "-"
+      ], 
+      "paths": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-paths", 
+         "-"
+      ], 
+      "pid": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-pid", 
+         "-"
+      ], 
+      "prefix": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-prefix", 
+         "-"
+      ], 
+      "screens": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html#confval-screens", 
+         "-"
+      ], 
+      "screenshot": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-screenshot", 
+         "-"
+      ], 
+      "select": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-select", 
+         "-"
+      ], 
+      "selectRecord": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-selectRecord", 
+         "-"
+      ], 
+      "selector": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-selector", 
+         "-"
+      ], 
+      "snippet": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-snippet", 
+         "-"
+      ], 
+      "tab": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-tab", 
+         "-"
+      ], 
+      "table": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html#confval-table", 
+         "-"
+      ], 
+      "tableConvert": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html#confval-tableConvert", 
+         "-"
+      ], 
+      "tables": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-tables", 
+         "-"
+      ], 
+      "timeout": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-timeout", 
+         "-"
+      ], 
+      "uid": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-uid", 
+         "-"
+      ], 
+      "view": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-view", 
+         "-"
+      ]
+   }, 
    "std:doc": {
+      "Configuration/ActionConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html", 
+         "Action configuration"
+      ], 
+      "Configuration/ConfigFile": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ConfigFile.html", 
+         "Config.json file"
+      ], 
+      "Configuration/ExtensionConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html", 
+         "Extension configuration"
+      ], 
+      "Configuration/FieldConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/FieldConfiguration.html", 
+         "Field configuration"
+      ], 
+      "Configuration/Index": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Index.html", 
+         "Configuration"
+      ], 
+      "Configuration/ModuleConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ModuleConfiguration.html", 
+         "Module configuration"
+      ], 
+      "Configuration/ScreenConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html", 
+         "Screen configuration"
+      ], 
+      "Configuration/SelectConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SelectConfiguration.html", 
+         "Select configuration"
+      ], 
+      "Configuration/TableConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html", 
+         "Table level configuration"
+      ], 
       "Install/Index": [
          "SIG Screenshots", 
          "1.0", 
@@ -38,6 +280,30 @@
       ]
    }, 
    "std:label": {
+      "action_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#action-configuration", 
+         "Action configuration"
+      ], 
+      "configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Index.html#configuration", 
+         "Configuration"
+      ], 
+      "extension_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ModuleConfiguration.html#extension-configuration", 
+         "Module configuration"
+      ], 
+      "field_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/FieldConfiguration.html#field-configuration", 
+         "Field configuration"
+      ], 
       "link-targets": [
          "SIG Screenshots", 
          "1.0", 
@@ -50,11 +316,29 @@
          "py-modindex.html", 
          "Module Index"
       ], 
+      "screen_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#screen-configuration", 
+         "Screen configuration"
+      ], 
       "search": [
          "SIG Screenshots", 
          "1.0", 
          "search.html", 
          "Search Page"
+      ], 
+      "select_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SelectConfiguration.html#select-configuration", 
+         "Select configuration"
+      ], 
+      "table_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/TableConfiguration.html#table-configuration", 
+         "Table level configuration"
       ]
    }
 }

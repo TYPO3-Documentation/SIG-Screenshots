@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="SIG Screenshots" name="docsearch:name"/>
+<meta content="" name="docsearch:package_type"/>
+<meta content="1.0.0" name="docsearch:release"/>
+<meta content="1.0" name="docsearch:version"/>
+<meta content="2021-02-27T17:36:51+00:00" name="docsearch:modified"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
+<meta content="2021-02-27T17:36:51+00:00" name="dc.modified"/>
+<meta content="2021-02-27T17:36:51+00:00" property="article:modified_time"/>
+<title>Screen configuration — SIG Screenshots 1.0.0 documentation</title>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<!-- linktags -->
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
+<link href="Index.html" rel="up" title="Configuration"/>
+<link href="SelectConfiguration.html" rel="next" title="Select configuration"/>
+<link href="TableConfiguration.html" rel="prev" title="Table level configuration"/>
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+<script src="../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<!-- pageheader -->
+<a class="logo" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../_static/img/typo3-logo.svg" width="484"/>
+</a>
+<!-- /pageheader -->
+</div>
+</div>
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../index.html">SIG Screenshots</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<!-- searchbox.html -->
+<div class="toc-search" id="searchbox" role="search">
+<form action="../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+<!-- /searchbox.html -->
+<div aria-label="main navigation" class="toc" role="navigation">
+<!-- menu -->
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Screen configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Readme/Index.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notes.html">Changed for puppeteer implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+<ul>
+<li><a class="reference internal" href="#">Screen configuration</a></li>
+</ul>
+<!-- /menu -->
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="TableConfiguration.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="SelectConfiguration.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
+<li aria-current="page" class="breadcrumb-item active">Screen configuration</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/ScreenConfiguration.rst" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/ScreenConfiguration.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<!-- /breadcrumbs.html -->
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<!-- body -->
+<div class="section" id="screen-configuration">
+<span id="id1"></span><h1>Screen configuration<a class="headerlink" href="#screen-configuration" title="Permalink to this headline">¶</a></h1>
+<p>The screen configuration is an object with the following parameters:</p>
+<dl class="confval">
+<dt id="confval-view">
+<code class="descname">view</code><a class="headerlink" href="#confval-view" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Must contain one of the following:</p>
+<dl class="docutils">
+<dt>table</dt>
+<dd>Take a screenshot of the table overview in list view on a certain
+page. This page is defined by pid or selectRecord configuration.</dd>
+<dt>record</dt>
+<dd>Take an overview screenshot of one record. The record is defined by
+uid or selectRecord configuration. Tabs can be switched by actions.</dd>
+<dt>fields</dt>
+<dd>Take screenshots of (multiple) fields as defined in the property
+<code class="code json docutils literal notranslate"><span class="pre">fields</span></code> of the corresponding <a class="reference internal" href="TableConfiguration.html#table-configuration"><span class="std std-ref">table configuration</span></a>. The record is defined by
+uid or selectRecord configuration. Tabs can be switched by actions.</dd>
+</dl>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-pid">
+<code class="descname">pid</code><a class="headerlink" href="#confval-pid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+<p>Defines the uid of the page on which a screenshot of the table overview
+should be taken. Only used in view <code class="code json docutils literal notranslate"><span class="pre">table</span></code>, overrides a
+<code class="code json docutils literal notranslate"><span class="pre">selectRecord</span></code> configuration.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-uid">
+<code class="descname">uid</code><a class="headerlink" href="#confval-uid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+<p>Uid of the record whose screenshot should be taken. Only used in view
+<code class="code json docutils literal notranslate"><span class="pre">record</span></code> and <code class="code json docutils literal notranslate"><span class="pre">fields</span></code>, overrides a <code class="code json docutils literal notranslate"><span class="pre">selectRecord</span></code>
+configuration.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-selectRecord">
+<code class="descname">selectRecord</code><a class="headerlink" href="#confval-selectRecord" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="SelectConfiguration.html#select-configuration"><span class="std std-ref">select configuration</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>Defines the uid of the page on which the screenshots should be taken (view
+<code class="code json docutils literal notranslate"><span class="pre">table</span></code>) or the record (view <code class="code json docutils literal notranslate"><span class="pre">record</span></code> and <code class="code json docutils literal notranslate"><span class="pre">fields</span></code>).</p>
+<p><strong>Example</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"selectRecord": {
+   "by": "header",
+   "header": "Playground"
+}
+</pre></div>
+</div>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-actions">
+<code class="descname">actions</code><a class="headerlink" href="#confval-actions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of <a class="reference internal" href="ActionConfiguration.html#action-configuration"><span class="std std-ref">action configurations</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>The ref:<code class="code docutils literal notranslate"><span class="pre">actions</span> <span class="pre">&lt;action_configuration&gt;</span></code> that should be executed before
+taking the screenshot. They include clicking an element, waiting for a
+defined time or selector, changing tabs, etc. The actions will be executed
+in the order as defined in this array.</p>
+<p>In the view <code class="code json docutils literal notranslate"><span class="pre">fields</span></code> it can be overridden by the actions defined in the
+field.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-selector">
+<code class="descname">selector</code><a class="headerlink" href="#confval-selector" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Selector to choose the div of which a screenshot should be taken. If empty a
+screenshot of the whole page will be taken. Example: <code class="code json docutils literal notranslate"><span class="pre">.recordlist</span></code>.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#confval-prefix" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string (in lower_case_with_underlines)</td>
+</tr>
+</tbody>
+</table>
+<p>A prefix used for all filenames and links. For example <code class="code docutils literal notranslate"><span class="pre">inline_mn_</span></code>.
+Should end on a underline</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-filename">
+<code class="descname">filename</code><a class="headerlink" href="#confval-filename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>The desired filename without extensions. For example <code class="code json docutils literal notranslate"><span class="pre">CtrlType</span></code>. In
+the view <code class="code json docutils literal notranslate"><span class="pre">fields</span></code> it is overridden by the filename defined in the
+field.</p>
+<p>Defaults to the table name in UpperCamelCase for views <code class="code json docutils literal notranslate"><span class="pre">record</span></code> and
+<code class="code json docutils literal notranslate"><span class="pre">table</span></code>.</p>
+<p>Must be unique within the defined path. Otherwise both screenshots and
+corresponding ReST files will be silently overridden.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-caption">
+<code class="descname">caption</code><a class="headerlink" href="#confval-caption" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>A caption to be displayed below the screenshot. In
+the view <code class="code json docutils literal notranslate"><span class="pre">fields</span></code> it is overridden by the caption defined in the
+field.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-screenshot">
+<code class="descname">screenshot</code><a class="headerlink" href="#confval-screenshot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>ignore</dt>
+<dd>Don’t attempt to take a screenshot. This can be used to comment out a
+screenshot that isn’t working right now or to only generate the code
+snippet.</dd>
+<dt>ignoreOnError</dt>
+<dd>Try to take the screenshot but ignore an error. Can be used in development
+to ignore screenshots that temporary fail. Shouldn’t be used in
+production.</dd>
+<dt>default</dt>
+<dd>Take the screenshot.</dd>
+</dl>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-snippet">
+<code class="descname">snippet</code><a class="headerlink" href="#confval-snippet" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>ignore</dt>
+<dd>Don’t attempt to create a code snippet.</dd>
+<dt>default</dt>
+<dd>Try to create a code snippet if possible.</dd>
+</dl>
+</dd></dl>
+</div>
+<!-- /body -->
+</div>
+</div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="TableConfiguration.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="SelectConfiguration.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
+<!-- /pager.html -->
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<!-- footer.html -->
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner">
+<div class="footer-additional">
+<p class="text-center">
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/3d80b7f24f8fbc3d7153c0c0ce578dd3727030c9" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Feb 27, 2021 17:36
+                        </a>
+</p>
+<p class="text-center">Last rendered: Feb 27, 2021 17:37</p>
+<p class="text-center">
+<a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
+                            TYPO3 Theme 4.4.3
+                        </a>
+</p>
+</div>
+<div class="footer-meta">
+<div class="footer-meta-copyright">
+                        © Copyright 2021
+                    </div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- /footer.html -->
+</div>
+</div>
+<script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: '../',
+            VERSION: '1.0.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+<script src="../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../_static/js/theme.min.js" type="text/javascript"></script>
+<script src="../_static/language_data.js" type="text/javascript"></script>
+<script src="../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+</body>
+</html>

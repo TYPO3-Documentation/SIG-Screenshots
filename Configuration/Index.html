@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-02-27T17:36:51+00:00" name="dc.modified"/>
 <meta content="2021-02-27T17:36:51+00:00" property="article:modified_time"/>
-<title>Link targets — SIG Screenshots 1.0.0 documentation</title>
+<title>Configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -20,6 +20,8 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
+<link href="ConfigFile.html" rel="next" title="Config.json file"/>
+<link href="../index.html" rel="prev" title="Notes of SIG Screenshots"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -59,15 +61,15 @@
 <!-- /searchbox.html -->
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/ConfigFile.html">Config.json file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/ExtensionConfiguration.html">Extension configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/TableConfiguration.html">Table level configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/ScreenConfiguration.html">Screen configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/SelectConfiguration.html">Select configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/ActionConfiguration.html">Action configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/FieldConfiguration.html">Field configuration</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
@@ -78,7 +80,7 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Link targets</a></li>
+<li><a class="reference internal" href="#">Configuration</a></li>
 </ul>
 <!-- /menu -->
 </div>
@@ -88,19 +90,21 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="../index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="ConfigFile.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Link targets</li>
+<li aria-current="page" class="breadcrumb-item active">Configuration</li>
 </ol>
 <div class="breadcrumb-additions">
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Targets/Targets.rst" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/Index.rst" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Targets/Targets.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/Index.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -110,32 +114,47 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="link-targets">
-<span id="index-0"></span><span id="id1"></span><h1>Link targets<a class="headerlink" href="#link-targets" title="Permalink to this headline">¶</a></h1>
-<p>If you want to link to this manual you can make use of the following labels.</p>
-<dl class="ref-targets-list docutils">
-<dt>Configuration/ConfigFile</dt>
-<dd><ul class="first last simple">
-<li><span class="e1">[</span><a class="e2 reference internal" href="../_sources/Configuration/ConfigFile.rst.txt?refid=configuration&amp;line=38">0038</a><span class="e3">] </span><a class="e4 reference internal" href="../Configuration/ConfigFile.html#configuration" title="Configuration">:ref:`configuration`</a></li>
+<div class="section" id="configuration">
+<span id="id1"></span><h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<p>The configuration of automatic screenshot can be done in the folder
+<code class="file docutils literal notranslate"><span class="pre">Scripts/GenerateScreenshots/</span></code> from the root path of the manual (Outside
+Documentation!).</p>
+<p>The file <code class="file docutils literal notranslate"><span class="pre">CreateMappings.sh</span></code> contains the configurations of all mapping
+file generations. These are used such that you can call records by title or
+another desired filed instead of by uid. As uids might change in different
+installations on different machines.</p>
+<p>The file <code class="file docutils literal notranslate"><span class="pre">Config.json</span></code> contains the configuration of the automatic
+screenshots and all other files that are generated automatically.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
 </ul>
-</dd>
-<dt>Configuration/Index</dt>
-<dd><ul class="first last simple">
-<li><span class="e1">[</span><a class="e2 reference internal" href="../_sources/Configuration/Index.rst.txt?refid=configuration&amp;line=38">0038</a><span class="e3">] </span><a class="e4 reference internal" href="../Configuration/Index.html#configuration" title="Configuration">:ref:`configuration`</a></li>
-</ul>
-</dd>
-<dt>Targets/Targets</dt>
-<dd><ul class="first last simple">
-<li><span class="e1">[</span><a class="e2 reference internal" href="../_sources/Targets/Targets.rst.txt?refid=link-targets&amp;line=41">0041</a><span class="e3">] </span><a class="e4 reference internal" href="Targets.html#link-targets" title="Link targets">:ref:`link-targets`</a></li>
-</ul>
-</dd>
-</dl>
-<p class="ref-targets-list-summary">Summary: 3 targets (3 with link text, 0 without).</p>
+</div>
 </div>
 <!-- /body -->
 </div>
 </div>
 <!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../index.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="ConfigFile.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
 <!-- /pager.html -->
 </div>
 </div>
