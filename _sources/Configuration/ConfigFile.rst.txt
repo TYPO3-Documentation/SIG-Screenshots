@@ -7,6 +7,20 @@ Config.json file
 
 This is a json object with the following two keys:
 
+.. confval:: settings
+
+   :Required: false
+   :type: object
+
+   Can be used to override the :ref:`general settings <settings>`.
+
+   .. code-block:: json
+
+      "settings": {
+         "snippet": "ignore"
+      }
+
+
 .. confval:: comments
 
    :Required: true

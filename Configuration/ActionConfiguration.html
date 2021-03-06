@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-04T19:45:09+00:00" name="docsearch:modified"/>
+<meta content="2021-03-06T14:12:45+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-04T19:45:09+00:00" name="dc.modified"/>
-<meta content="2021-03-04T19:45:09+00:00" property="article:modified_time"/>
+<meta content="2021-03-06T14:12:45+00:00" name="dc.modified"/>
+<meta content="2021-03-06T14:12:45+00:00" property="article:modified_time"/>
 <title>Action configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -84,6 +84,7 @@
 <li><a class="reference internal" href="#">Action configuration</a><ul>
 <li><a class="reference internal" href="#action-click">Action click</a></li>
 <li><a class="reference internal" href="#action-change">Action change</a></li>
+<li><a class="reference internal" href="#action-hide">Action hide</a></li>
 <li><a class="reference internal" href="#action-open">Action open</a></li>
 <li><a class="reference internal" href="#action-wait">Action wait</a></li>
 </ul>
@@ -149,6 +150,8 @@
 <dt>wait</dt>
 <dd>Wait for something. Either used with a <code class="code docutils literal notranslate"><span class="pre">selector</span></code> to wait for
 or a <code class="code docutils literal notranslate"><span class="pre">timeout</span></code> in ms.</dd>
+<dt>hide</dt>
+<dd>Hide a css selector</dd>
 </dl>
 </dd></dl>
 <div class="section" id="action-click">
@@ -267,6 +270,35 @@ the name of the field.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
+</dd></dl>
+</div>
+<div class="section" id="action-hide">
+<h2>Action hide<a class="headerlink" href="#action-hide" title="Permalink to this headline">¶</a></h2>
+<p>Hides a certain element by executing javascript on the page whose screenshot
+should be taken.</p>
+<dl class="confval">
+<dt id="confval-select">
+<code class="descname">select</code><a class="headerlink" href="#confval-select" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Hide the element by a jquery selctor:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>{</dt>
+<dd>“action”: “hide”,
+“selector”: “.module-docheader”</dd>
+</dl>
+<p>}</p>
 </dd></dl>
 </div>
 <div class="section" id="action-open">
@@ -402,11 +434,11 @@ Contains the selector</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/a1ee332f3ccf2cbe6e60996519da8cee197d9b18" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 04, 2021 19:45
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/caccad8bb88e5e6459502a74ab2614606ec086ad" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 06, 2021 14:12
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 04, 2021 19:45</p>
+<p class="text-center">Last rendered: Mar 06, 2021 14:13</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.4.3

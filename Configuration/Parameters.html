@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-03-06T14:12:45+00:00" name="dc.modified"/>
 <meta content="2021-03-06T14:12:45+00:00" property="article:modified_time"/>
-<title>Table level configuration — SIG Screenshots 1.0.0 documentation</title>
+<title>Parameters — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -20,9 +20,6 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
-<link href="Index.html" rel="up" title="Configuration"/>
-<link href="ScreenConfiguration.html" rel="next" title="Screen configuration"/>
-<link href="ExtensionConfiguration.html" rel="prev" title="Extension configuration"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -62,11 +59,11 @@
 <!-- /searchbox.html -->
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Index.html">Configuration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Table level configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
@@ -81,7 +78,10 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Table level configuration</a></li>
+<li><a class="reference internal" href="#">Parameters</a><ul>
+<li><a class="reference internal" href="#pupeteer">Pupeteer</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -91,22 +91,19 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
-<a accesskey="p" class="no-focus" href="ExtensionConfiguration.html" tabindex="-1"></a>
-<a accesskey="n" class="no-focus" href="ScreenConfiguration.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
-<li aria-current="page" class="breadcrumb-item active">Table level configuration</li>
+<li aria-current="page" class="breadcrumb-item active">Parameters</li>
 </ol>
 <div class="breadcrumb-additions">
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/TableConfiguration.rst" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/Parameters.rst" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/TableConfiguration.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/Parameters.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -116,127 +113,32 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="table-level-configuration">
-<span id="table-configuration"></span><h1>Table level configuration<a class="headerlink" href="#table-level-configuration" title="Permalink to this headline">¶</a></h1>
-<p>The table configuration is an object with the following parameters:</p>
-<dl class="confval">
-<dt id="confval-table">
-<code class="descname">table</code><a class="headerlink" href="#confval-table" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
-</tr>
-</tbody>
-</table>
-<p>Contains the name of the table as it is used in SQL, for example
-<code class="code json docutils literal notranslate"><span class="pre">"table":</span> <span class="pre">"tt_content"</span></code>.</p>
-</dd></dl>
-<dl class="confval">
-<dt id="confval-screens">
-<code class="descname">screens</code><a class="headerlink" href="#confval-screens" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of <a class="reference internal" href="ScreenConfiguration.html#screen-configuration"><span class="std std-ref">screen configurations</span></a></td>
-</tr>
-</tbody>
-</table>
-<p>Each screen is used for one or more screenshots.</p>
-</dd></dl>
-<dl class="confval">
-<dt id="confval-fields">
-<code class="descname">fields</code><a class="headerlink" href="#confval-fields" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of strings or <a class="reference internal" href="FieldConfiguration.html#field-configuration"><span class="std std-ref">field configurations</span></a></td>
-</tr>
-</tbody>
-</table>
-<p>If there is a <a class="reference internal" href="ScreenConfiguration.html#screen-configuration"><span class="std std-ref">screen configuration</span></a> with the
-view <code class="code json docutils literal notranslate"><span class="pre">fields</span></code> this array must contain either the database names of
-fields in this table, for example <code class="code sql docutils literal notranslate"><span class="pre">"file_mountpoints"</span></code> or
-<a class="reference internal" href="FieldConfiguration.html#field-configuration"><span class="std std-ref">field configurations</span></a>. Both can be mixed.</p>
-<p><strong>Example</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"fields": [
-   {
-      "field": "sys_language_uid",
-      "caption": "A typical sys_language_uid field"
-   },
-   "input_1",
-   "input_2",
-   {
-      "field": "input_28",
-      "actions": [
-         {
-            "action": "wait",
-            "timeout": "500"
-         }
-      ]
-   },
-   "input_30",
-]
+<div class="section" id="parameters">
+<span id="id1"></span><h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pupeteer">
+<h2>Pupeteer<a class="headerlink" href="#pupeteer" title="Permalink to this headline">¶</a></h2>
+<p>The pupeteer script can be called with the following parameters:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:code:<span class="sb">`</span>ddev <span class="nb">exec</span> node typo3.js --suite<span class="o">=</span>TYPO3CMS-Reference-TCA --limitToTable<span class="o">=</span>tt_content<span class="sb">`</span> --stopOnFirstError<span class="o">=</span><span class="nb">false</span>
 </pre></div>
 </div>
-</dd></dl>
-<dl class="confval">
-<dt id="confval-tableConvert">
-<code class="descname">tableConvert</code><a class="headerlink" href="#confval-tableConvert" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
-</tr>
-</tbody>
-</table>
-<p>One of the following strings:</p>
 <dl class="docutils">
-<dt>ignore</dt>
-<dd>The TCA source should not be copied and therefore be ignored</dd>
-<dt>parse-as-text</dt>
-<dd>The TCA source contains values that cannot be automatically parsed
-such as calls to Core functions. It should therefore be copied into
-the manual as-is.</dd>
-<dt>no-comments</dt>
-<dd>Don’t generate automatic comments.</dd>
-<dt>default:</dt>
-<dd>Include and parse the TCA file and generate automatic comments such that
-the TCA configuration of sections and fields can be automatically
-included in code snippets.</dd>
+<dt>suite</dt>
+<dd>Name of the manual. The manual must lie at
+<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]</span></code> and the Config.json be found at
+<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]/Scripts/GenerateScreenshots/CreateMappings.sh</span></code></dd>
+<dt>limitToTable</dt>
+<dd>If set only this table will be traversed, useful when testing. If empty all
+tables will be traversed.</dd>
+<dt>stopOnFirstError</dt>
+<dd>In case of errors should the script keep going and try to do the next
+screenshot (false) or exit (true).</dd>
 </dl>
-</dd></dl>
+</div>
 </div>
 <!-- /body -->
 </div>
 </div>
 <!-- pager.html -->
-<nav aria-label="Page navigation example">
-<ul class="pagination justify-content-center">
-<li class="page-item">
-<a class="page-link" href="ExtensionConfiguration.html" title="Accesskey Alt(+Shift)+p">
-                Previous
-            </a>
-</li>
-<li class="page-item">
-<a class="page-link" href="ScreenConfiguration.html" title="Accesskey Alt(+Shift)+n">
-                Next
-            </a>
-</li>
-</ul>
-</nav>
 <!-- /pager.html -->
 </div>
 </div>

@@ -4,8 +4,10 @@ Configuration/ExtensionConfiguration.html
 Configuration/FieldConfiguration.html
 Configuration/Index.html
 Configuration/ModuleConfiguration.html
+Configuration/Parameters.html
 Configuration/ScreenConfiguration.html
 Configuration/SelectConfiguration.html
+Configuration/Settings.html
 Configuration/TableConfiguration.html
 Install/Index.html
 Notes.html

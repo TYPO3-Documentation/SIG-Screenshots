@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-04T19:45:09+00:00" name="docsearch:modified"/>
+<meta content="2021-03-06T14:12:45+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-04T19:45:09+00:00" name="dc.modified"/>
-<meta content="2021-03-04T19:45:09+00:00" property="article:modified_time"/>
+<meta content="2021-03-06T14:12:45+00:00" name="dc.modified"/>
+<meta content="2021-03-06T14:12:45+00:00" property="article:modified_time"/>
 <title>Screen configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -294,6 +294,26 @@ the view <code class="code json docutils literal notranslate"><span class="pre">
 field.</p>
 </dd></dl>
 <dl class="confval">
+<dt id="confval-clip">
+<code class="descname">clip</code><a class="headerlink" href="#confval-clip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object</td>
+</tr>
+</tbody>
+</table>
+<p>Clippes the screenshot to a fixed height or width:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"clip": {
+   "height": 400
+}
+</pre></div>
+</div>
+</dd></dl>
+<dl class="confval">
 <dt id="confval-screenshot">
 <code class="descname">screenshot</code><a class="headerlink" href="#confval-screenshot" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
@@ -339,6 +359,26 @@ production.</dd>
 <dd>Try to create a code snippet if possible.</dd>
 </dl>
 </dd></dl>
+<dl class="confval">
+<dt id="confval-viewport">
+<code class="descname">viewport</code><a class="headerlink" href="#confval-viewport" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">as defined in the <a class="reference internal" href="Settings.html#settings"><span class="std std-ref">Settings</span></a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"viewport": {"width": 960, "height": 640}
+</pre></div>
+</div>
+</dd></dl>
 </div>
 <!-- /body -->
 </div>
@@ -371,11 +411,11 @@ production.</dd>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/a1ee332f3ccf2cbe6e60996519da8cee197d9b18" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 04, 2021 19:45
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/caccad8bb88e5e6459502a74ab2614606ec086ad" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 06, 2021 14:12
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 04, 2021 19:45</p>
+<p class="text-center">Last rendered: Mar 06, 2021 14:13</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.4.3

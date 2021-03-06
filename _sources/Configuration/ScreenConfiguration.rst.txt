@@ -116,6 +116,20 @@ The screen configuration is an object with the following parameters:
    the view :json:`fields` it is overridden by the caption defined in the
    field.
 
+
+.. confval:: clip
+
+   :Required: false
+   :type: object
+
+   Clippes the screenshot to a fixed height or width:
+
+   .. code-block:: json
+
+      "clip": {
+         "height": 400
+      }
+
 .. confval:: screenshot
 
    :Required: false
@@ -144,3 +158,16 @@ The screen configuration is an object with the following parameters:
 
    default
       Try to create a code snippet if possible.
+
+
+.. confval:: viewport
+
+   :Required: false
+   :type: array
+   :default: as defined in the :ref:`settings`
+
+   **Example**
+
+   .. code-block:: json
+
+      "viewport": {"width": 960, "height": 640}

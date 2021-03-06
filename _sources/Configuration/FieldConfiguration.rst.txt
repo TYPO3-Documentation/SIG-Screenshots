@@ -62,6 +62,19 @@ The field configuration is an object with the following parameters:
    the corresponding code snippet of the tca definition will be
    automatically inserted.
 
+.. confval:: clip
+
+   :Required: false
+   :type: object
+
+   Clippes the screenshot to a fixed height or width:
+
+   .. code-block:: json
+
+      "clip": {
+         "height": 400
+      }
+
 .. confval:: screenshot
 
    :Required: false

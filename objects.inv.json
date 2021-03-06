@@ -42,6 +42,12 @@
          "Configuration/ScreenConfiguration.html#confval-caption", 
          "-"
       ], 
+      "clip": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-clip", 
+         "-"
+      ], 
       "comments": [
          "SIG Screenshots", 
          "1.0", 
@@ -138,6 +144,12 @@
          "Configuration/ScreenConfiguration.html#confval-selector", 
          "-"
       ], 
+      "settings": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ConfigFile.html#confval-settings", 
+         "-"
+      ], 
       "snippet": [
          "SIG Screenshots", 
          "1.0", 
@@ -185,6 +197,12 @@
          "1.0", 
          "Configuration/ScreenConfiguration.html#confval-view", 
          "-"
+      ], 
+      "viewport": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ScreenConfiguration.html#confval-viewport", 
+         "-"
       ]
    }, 
    "std:doc": {
@@ -224,6 +242,12 @@
          "Configuration/ModuleConfiguration.html", 
          "Module configuration"
       ], 
+      "Configuration/Parameters": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Parameters.html", 
+         "Parameters"
+      ], 
       "Configuration/ScreenConfiguration": [
          "SIG Screenshots", 
          "1.0", 
@@ -235,6 +259,12 @@
          "1.0", 
          "Configuration/SelectConfiguration.html", 
          "Select configuration"
+      ], 
+      "Configuration/Settings": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Settings.html", 
+         "Settings"
       ], 
       "Configuration/TableConfiguration": [
          "SIG Screenshots", 
@@ -316,6 +346,12 @@
          "py-modindex.html", 
          "Module Index"
       ], 
+      "parameters": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Parameters.html#parameters", 
+         "Parameters"
+      ], 
       "screen_configuration": [
          "SIG Screenshots", 
          "1.0", 
@@ -333,6 +369,12 @@
          "1.0", 
          "Configuration/SelectConfiguration.html#select-configuration", 
          "Select configuration"
+      ], 
+      "settings": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/Settings.html#settings", 
+         "Settings"
       ], 
       "table_configuration": [
          "SIG Screenshots", 

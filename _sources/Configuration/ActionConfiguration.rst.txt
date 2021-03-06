@@ -27,6 +27,9 @@ The action configuration is an object with the following parameters:
       Wait for something. Either used with a :code:`selector` to wait for
       or a :code:`timeout` in ms.
 
+   hide
+      Hide a css selector
+
 
 Action click
 ============
@@ -123,6 +126,28 @@ This action changes something. Is has the following properties:
          "select": "record_type",
          "value": "0"
       }
+
+
+Action hide
+===========
+
+Hides a certain element by executing javascript on the page whose screenshot
+should be taken.
+
+.. confval:: select
+
+   :Required: false
+   :type: string
+
+   Hide the element by a jquery selctor:
+
+   .. code-block:: json
+
+   {
+      "action": "hide",
+      "selector": ".module-docheader"
+   }
+
 
 Action open
 ===========
