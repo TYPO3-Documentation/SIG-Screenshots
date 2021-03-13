@@ -90,6 +90,12 @@
          "Configuration/ActionConfiguration.html#confval-item", 
          "-"
       ], 
+      "item:arrow": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-item:arrow", 
+         "-"
+      ], 
       "item:box": [
          "SIG Screenshots", 
          "1.0", 

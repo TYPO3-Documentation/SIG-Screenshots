@@ -172,6 +172,29 @@ Draws a visual guide element in TYPO3 orange.
 
    An orange box around the selector
 
+.. confval:: item:arrow
+
+   :Required: false
+   :type: string
+
+   Draw an orange arrow around the selector. Often has to be combined
+   with a wait so everything is drawn before taking the screenshot
+
+   .. code-block:: json
+
+      "actions": [
+         {
+            "action": "draw",
+            "item": "arrow",
+            "selector": "tbody .btn-default:first"
+         }
+      ]
+
+   .. figure:: /Images/ActionDrawArrow.png
+   :class: with-shadow
+
+   An orange box around the selector
+
 
 Action hide
 ===========

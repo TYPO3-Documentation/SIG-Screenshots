@@ -2,8 +2,9 @@ WARNING: the sphinxcontrib.t3tablerows extension does not declare if it is safe 
 WARNING: doing serial read
 ./Documentation/Configuration/ActionConfiguration.rst:6: WARNING: Duplicate ID: "confval-select".
 ./Documentation/Configuration/ActionConfiguration.rst:171: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+./Documentation/Configuration/ActionConfiguration.rst:194: WARNING: Explicit markup ends without a blank line; unexpected unindent.
 ./Documentation/Configuration/ActionConfiguration.rst:6: WARNING: Duplicate ID: "confval-select".
-./Documentation/Configuration/ActionConfiguration.rst:194: WARNING: Definition list ends without a blank line; unexpected unindent.
+./Documentation/Configuration/ActionConfiguration.rst:217: WARNING: Definition list ends without a blank line; unexpected unindent.
 ./Documentation/Configuration/Index.rst:6: WARNING: duplicate label configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/ConfigFile.rst
 ./Documentation/Configuration/ModuleConfiguration.rst:6: WARNING: duplicate label extension_configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/ExtensionConfiguration.rst
 ./Documentation/Configuration/ModuleConfiguration.rst: WARNING: document isn't included in any toctree
@@ -18,16 +19,18 @@ WARNING: doing serial read
 ./Documentation/Configuration/ActionConfiguration.rst:147: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ActionConfiguration.rst:: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ActionConfiguration.rst:: WARNING: 'class' reference target not found: string
-./Documentation/Configuration/ActionConfiguration.rst:237: WARNING: 'class' reference target not found: string
+./Documentation/Configuration/ActionConfiguration.rst:: WARNING: 'class' reference target not found: string
+./Documentation/Configuration/ActionConfiguration.rst:260: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ActionConfiguration.rst:: WARNING: 'class' reference target not found: integer
 ./Documentation/Configuration/ActionConfiguration.rst:: WARNING: 'class' reference target not found: string
-./Documentation/Configuration/ActionConfiguration.rst:271: WARNING: 'class' reference target not found: object
+./Documentation/Configuration/ActionConfiguration.rst:294: WARNING: 'class' reference target not found: object
 ./Documentation/Configuration/ActionConfiguration.rst:51: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ActionConfiguration.rst:82: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ActionConfiguration.rst:101: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ActionConfiguration.rst:156: WARNING: Could not lex literal_block as "json". Highlighting skipped.
-./Documentation/Configuration/ActionConfiguration.rst:224: WARNING: Could not lex literal_block as "json". Highlighting skipped.
-./Documentation/Configuration/ActionConfiguration.rst:263: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/ActionConfiguration.rst:183: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/ActionConfiguration.rst:247: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/ActionConfiguration.rst:286: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ConfigFile.rst:23: WARNING: 'class' reference target not found: object
 ./Documentation/Configuration/ConfigFile.rst:40: WARNING: 'class' reference target not found: object
 ./Documentation/Configuration/ConfigFile.rst:46: WARNING: undefined label: extension configuration (if the link has no caption the label must precede a section header)

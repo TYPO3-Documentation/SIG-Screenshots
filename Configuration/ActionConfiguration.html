@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-13T07:21:31+00:00" name="docsearch:modified"/>
+<meta content="2021-03-13T08:39:36+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-13T07:21:31+00:00" name="dc.modified"/>
-<meta content="2021-03-13T07:21:31+00:00" property="article:modified_time"/>
+<meta content="2021-03-13T08:39:36+00:00" name="dc.modified"/>
+<meta content="2021-03-13T08:39:36+00:00" property="article:modified_time"/>
 <title>Action configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -338,6 +338,43 @@ with a wait so everything is drawn before taking the screenshot</p>
 </table>
 <p>An orange box around the selector</p>
 </dd></dl>
+<dl class="confval">
+<dt id="confval-item:arrow">
+<code class="descname">item:arrow</code><a class="headerlink" href="#confval-item:arrow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Draw an orange arrow around the selector. Often has to be combined
+with a wait so everything is drawn before taking the screenshot</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "draw",
+      "item": "arrow",
+      "selector": "tbody .btn-default:first"
+   }
+]
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/ActionDrawArrow.png" src="../_images/ActionDrawArrow.png"/>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Class:</th><td class="field-body">with-shadow</td>
+</tr>
+</tbody>
+</table>
+<p>An orange box around the selector</p>
+</dd></dl>
 </div>
 <div class="section" id="action-hide">
 <h2>Action hide<a class="headerlink" href="#action-hide" title="Permalink to this headline">¶</a></h2>
@@ -501,11 +538,11 @@ Contains the selector</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/90540fbf9a9e60304713183aaed3861b46573e05" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 13, 2021 07:21
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/b1908679e72681e36dcec79d302966a5a1f807af" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 13, 2021 08:39
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 13, 2021 07:22</p>
+<p class="text-center">Last rendered: Mar 13, 2021 08:40</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.4.3
