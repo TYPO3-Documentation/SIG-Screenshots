@@ -1,3 +1,4 @@
+Compare/Index.html
 Configuration/ActionConfiguration.html
 Configuration/ConfigFile.html
 Configuration/ExtensionConfiguration.html

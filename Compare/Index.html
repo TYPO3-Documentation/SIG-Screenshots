@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-03-13T10:28:11+00:00" name="dc.modified"/>
 <meta content="2021-03-13T10:28:11+00:00" property="article:modified_time"/>
-<title>Config.json file — SIG Screenshots 1.0.0 documentation</title>
+<title>Compare and copy files — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -20,9 +20,8 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
-<link href="Index.html" rel="up" title="Configuration"/>
-<link href="ExtensionConfiguration.html" rel="next" title="Extension configuration"/>
-<link href="Index.html" rel="prev" title="Configuration"/>
+<link href="../Configuration/Index.html" rel="next" title="Configuration"/>
+<link href="../index.html" rel="prev" title="Notes of SIG Screenshots"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -63,15 +62,15 @@
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Compare/Index.html">Compare and copy files</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Config.json file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Compare and copy files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ScreenConfiguration.html">Screen configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ActionConfiguration.html">Action configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/FieldConfiguration.html">Field configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
@@ -82,7 +81,7 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Config.json file</a></li>
+<li><a class="reference internal" href="#">Compare and copy files</a></li>
 </ul>
 <!-- /menu -->
 </div>
@@ -92,22 +91,21 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
-<a accesskey="p" class="no-focus" href="Index.html" tabindex="-1"></a>
-<a accesskey="n" class="no-focus" href="ExtensionConfiguration.html" tabindex="-1"></a>
+<a accesskey="p" class="no-focus" href="../index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../Configuration/Index.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
-<li aria-current="page" class="breadcrumb-item active">Config.json file</li>
+<li aria-current="page" class="breadcrumb-item active">Compare and copy files</li>
 </ol>
 <div class="breadcrumb-additions">
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/ConfigFile.rst" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Compare/Index.rst" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/ConfigFile.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Compare/Index.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -117,69 +115,12 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="config-json-file">
-<span id="configuration"></span><h1>Config.json file<a class="headerlink" href="#config-json-file" title="Permalink to this headline">¶</a></h1>
-<p>This is a json object with the following two keys:</p>
-<dl class="confval">
-<dt id="confval-settings">
-<code class="descname">settings</code><a class="headerlink" href="#confval-settings" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object</td>
-</tr>
-</tbody>
-</table>
-<p>Can be used to override the <a class="reference internal" href="Settings.html#settings"><span class="std std-ref">general settings</span></a>.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"settings": {
-   "snippet": "ignore"
-}
-</pre></div>
-</div>
-</dd></dl>
-<dl class="confval">
-<dt id="confval-comments">
-<code class="descname">comments</code><a class="headerlink" href="#confval-comments" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object</td>
-</tr>
-</tbody>
-</table>
-<p>These comments are used for the corresponding files in the first line. The
-comment can be removed by Editors to protect files against being
-automatically overridden.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-   <span class="nt">"php"</span><span class="p">:</span> <span class="s2">"// Automatic screenshot: Remove this comment if you want to manually change this file"</span><span class="p">,</span>
-   <span class="nt">"rst.txt"</span><span class="p">:</span> <span class="s2">".. Automatic screenshot: Remove this line if you want to manually change this file"</span><span class="p">,</span>
-   <span class="nt">"general"</span><span class="p">:</span> <span class="s2">"Automatic screenshot:"</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</dd></dl>
-<dl class="confval">
-<dt id="confval-extensions">
-<code class="descname">extensions</code><a class="headerlink" href="#confval-extensions" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of <a class="reference internal" href="ModuleConfiguration.html#extension-configuration"><span class="std std-ref">extension configurations</span></a></td>
-</tr>
-</tbody>
-</table>
-<p>All actions are stored into the corresponding <span class="xref std std-ref">extension configurations</span>, usually named after the extension (Core or third
-party) which was is used to create the screenshots.</p>
-</dd></dl>
+<div class="section" id="compare-and-copy-files">
+<span id="configuration"></span><h1>Compare and copy files<a class="headerlink" href="#compare-and-copy-files" title="Permalink to this headline">¶</a></h1>
+<p>The generated images can be compared and copied automatically using
+the following tool:</p>
+<p><a class="reference external" href="http://sig-screenshots.ddev.site/scripts/index.php?manual=TYPO3CMS-Tutorial-GettingStarted" rel="nofollow noopener">http://sig-screenshots.ddev.site/scripts/index.php?manual=TYPO3CMS-Tutorial-GettingStarted</a></p>
+<p>The GET-Parameter “manual” contains the manual to work on.</p>
 </div>
 <!-- /body -->
 </div>
@@ -188,12 +129,12 @@ party) which was is used to create the screenshots.</p>
 <nav aria-label="Page navigation example">
 <ul class="pagination justify-content-center">
 <li class="page-item">
-<a class="page-link" href="Index.html" title="Accesskey Alt(+Shift)+p">
+<a class="page-link" href="../index.html" title="Accesskey Alt(+Shift)+p">
                 Previous
             </a>
 </li>
 <li class="page-item">
-<a class="page-link" href="ExtensionConfiguration.html" title="Accesskey Alt(+Shift)+n">
+<a class="page-link" href="../Configuration/Index.html" title="Accesskey Alt(+Shift)+n">
                 Next
             </a>
 </li>
