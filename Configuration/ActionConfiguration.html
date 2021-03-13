@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-12T16:27:38+00:00" name="docsearch:modified"/>
+<meta content="2021-03-13T07:21:31+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-12T16:27:38+00:00" name="dc.modified"/>
-<meta content="2021-03-12T16:27:38+00:00" property="article:modified_time"/>
+<meta content="2021-03-13T07:21:31+00:00" name="dc.modified"/>
+<meta content="2021-03-13T07:21:31+00:00" property="article:modified_time"/>
 <title>Action configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -84,6 +84,7 @@
 <li><a class="reference internal" href="#">Action configuration</a><ul>
 <li><a class="reference internal" href="#action-click">Action click</a></li>
 <li><a class="reference internal" href="#action-change">Action change</a></li>
+<li><a class="reference internal" href="#action-draw">Action draw</a></li>
 <li><a class="reference internal" href="#action-hide">Action hide</a></li>
 <li><a class="reference internal" href="#action-open">Action open</a></li>
 <li><a class="reference internal" href="#action-wait">Action wait</a></li>
@@ -152,6 +153,8 @@
 or a <code class="code docutils literal notranslate"><span class="pre">timeout</span></code> in ms.</dd>
 <dt>hide</dt>
 <dd>Hide a css selector</dd>
+<dt>draw</dt>
+<dd>Draw a visual guide</dd>
 </dl>
 </dd></dl>
 <div class="section" id="action-click">
@@ -270,6 +273,70 @@ the name of the field.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
+</dd></dl>
+</div>
+<div class="section" id="action-draw">
+<h2>Action draw<a class="headerlink" href="#action-draw" title="Permalink to this headline">¶</a></h2>
+<p>Draws a visual guide element in TYPO3 orange.</p>
+<dl class="confval">
+<dt id="confval-item">
+<code class="descname">item</code><a class="headerlink" href="#confval-item" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>What item should be drawn.</p>
+<dl class="docutils">
+<dt>box</dt>
+<dd>An orange box around the selector</dd>
+</dl>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-item:box">
+<code class="descname">item:box</code><a class="headerlink" href="#confval-item:box" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Draw an orange box around the selector. Often has to be combined
+with a wait so everything is drawn before taking the screenshot</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"actions": [
+   {
+      "action": "draw",
+      "item": "box",
+      "selector": "tbody .btn-default:first"
+   },
+   {
+      "action": "wait",
+      "timeout": 100
+   }
+]
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/ActionDraw.png" src="../_images/ActionDraw.png"/>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Class:</th><td class="field-body">with-shadow</td>
+</tr>
+</tbody>
+</table>
+<p>An orange box around the selector</p>
 </dd></dl>
 </div>
 <div class="section" id="action-hide">
@@ -434,11 +501,11 @@ Contains the selector</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/f2cebcc92b14d689d5981208b8a6c125a26011d2" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 12, 2021 16:27
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/90540fbf9a9e60304713183aaed3861b46573e05" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 13, 2021 07:21
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 12, 2021 16:40</p>
+<p class="text-center">Last rendered: Mar 13, 2021 07:22</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.4.3

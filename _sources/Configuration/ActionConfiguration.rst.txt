@@ -30,6 +30,9 @@ The action configuration is an object with the following parameters:
    hide
       Hide a css selector
 
+   draw
+      Draw a visual guide
+
 
 Action click
 ============
@@ -126,6 +129,48 @@ This action changes something. Is has the following properties:
          "select": "record_type",
          "value": "0"
       }
+
+Action draw
+===========
+
+Draws a visual guide element in TYPO3 orange.
+
+.. confval:: item
+
+   :Required: false
+   :type: string
+
+   What item should be drawn.
+
+   box
+      An orange box around the selector
+
+.. confval:: item:box
+
+   :Required: false
+   :type: string
+
+   Draw an orange box around the selector. Often has to be combined
+   with a wait so everything is drawn before taking the screenshot
+
+   .. code-block:: json
+
+      "actions": [
+         {
+            "action": "draw",
+            "item": "box",
+            "selector": "tbody .btn-default:first"
+         },
+         {
+            "action": "wait",
+            "timeout": 100
+         }
+      ]
+
+   .. figure:: /Images/ActionDraw.png
+   :class: with-shadow
+
+   An orange box around the selector
 
 
 Action hide

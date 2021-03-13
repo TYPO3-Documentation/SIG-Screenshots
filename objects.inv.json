@@ -84,6 +84,18 @@
          "Configuration/ScreenConfiguration.html#confval-filename", 
          "-"
       ], 
+      "item": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-item", 
+         "-"
+      ], 
+      "item:box": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-item:box", 
+         "-"
+      ], 
       "modules": [
          "SIG Screenshots", 
          "1.0", 
