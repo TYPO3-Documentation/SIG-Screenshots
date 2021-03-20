@@ -1,5 +1,3 @@
-WARNING: the sphinxcontrib.t3tablerows extension does not declare if it is safe for parallel reading, assuming it isn't - please ask the extension author to check and make it explicit
-WARNING: doing serial read
 ./Documentation/Compare/Index.rst:11: WARNING: Literal block expected; none found.
 ./Documentation/Configuration/ActionConfiguration.rst:6: WARNING: Duplicate ID: "confval-select".
 ./Documentation/Configuration/ActionConfiguration.rst:171: WARNING: Explicit markup ends without a blank line; unexpected unindent.
