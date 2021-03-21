@@ -135,6 +135,7 @@ Action draw
 
 Draws a visual guide element in TYPO3 orange.
 
+
 .. confval:: item
 
    :Required: false
@@ -168,7 +169,7 @@ Draws a visual guide element in TYPO3 orange.
       ]
 
    .. figure:: /Images/ActionDraw.png
-   :class: with-shadow
+      :class: with-shadow
 
    An orange box around the selector
 
@@ -191,9 +192,59 @@ Draws a visual guide element in TYPO3 orange.
       ]
 
    .. figure:: /Images/ActionDrawArrow.png
-   :class: with-shadow
+      :class: with-shadow
 
    An orange box around the selector
+
+
+.. confval:: item:arrow
+
+   :Required: false
+   :type: string
+
+   Draw an orange label near the selector. You can specifiy the
+   content of the label. No more then two chars.
+
+   Draw a label with the content `1` near the active menu in the sidebar.
+
+   .. code-block:: json
+
+      {
+         "action": "draw",
+         "item": "label",
+         "selector": ".modulemenu-action-active",
+         "content": "1"
+      }
+
+   .. figure:: /Images/ActionDrawArrow.png
+      :class: with-shadow
+
+   A numbered label box around the selector
+
+
+.. confval:: selector
+
+   :Required: true
+   :type: string
+
+   Which jQuery selctor should the guide be attached to?
+
+
+.. confval:: iframe
+
+   :Required: true
+   :type: string
+
+   Which iFrame is the selctor found in - if any?
+
+   Example, draw a box around the sector in the content iframe::
+
+      {
+         "action": "draw",
+         "item": "box",
+         "selector": ".mySelector",
+         "iframe": "iframe#typo3-contentIframe"
+      }
 
 
 Action hide

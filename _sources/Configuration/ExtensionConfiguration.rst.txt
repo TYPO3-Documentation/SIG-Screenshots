@@ -34,12 +34,20 @@ The extension configuration is an object with the following parameters:
         "source": "typo3/sysext/frontend/Configuration/TCA/"
       },
 
+
+.. confval:: overview
+
+   :Required: false
+   :type:  array of :ref:`overview configurations <overview_configuration>`
+
+   Takes screenshots of the whole backend as an an overview.
+
 .. confval:: modules
 
    :Required: false
    :type:  array of :ref:`module configurations <module_configuration>`
 
-   Takes screenshots of backend modules
+   Takes screenshots of backend modules.
 
 
 .. confval:: tables

@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-03-21T13:05:25+00:00" name="dc.modified"/>
 <meta content="2021-03-21T13:05:25+00:00" property="article:modified_time"/>
-<title>Parameters — SIG Screenshots 1.0.0 documentation</title>
+<title>Run puppeteer — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -20,6 +20,8 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
+<link href="../Notes.html" rel="next" title="Changed for puppeteer implementation"/>
+<link href="../Readme/Index.html" rel="prev" title="README"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -59,29 +61,29 @@
 <!-- /searchbox.html -->
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Compare/Index.html">Compare and copy files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Index.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ConfigFile.html">Config.json file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/TableConfiguration.html">Table level configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ScreenConfiguration.html">Screen configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/SelectConfiguration.html">Select configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ActionConfiguration.html">Action configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/FieldConfiguration.html">Field configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Readme/Index.html">README</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Run/Index.html">Run puppeteer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Run puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html">Changed for puppeteer implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Parameters</a><ul>
-<li><a class="reference internal" href="#pupeteer">Pupeteer</a></li>
+<li><a class="reference internal" href="#">Run puppeteer</a><ul>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
 </ul>
 </li>
 </ul>
@@ -93,23 +95,25 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="../Readme/Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../Notes.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Parameters</li>
+<li aria-current="page" class="breadcrumb-item active">Run puppeteer</li>
 </ol>
 <div class="breadcrumb-additions">
 <a class="btn btn-sm btn-primary" href="https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/GitHub/" id="btnHowToEdit" rel="nofollow noopener" style="display:none" target="_blank">
 <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
 <span class="btn-text">How to edit</span>
 </a>
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/Parameters.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Run/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/Parameters.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Run/Index.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -119,25 +123,29 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="parameters">
-<span id="id1"></span><h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="pupeteer">
-<h2>Pupeteer<a class="headerlink" href="#pupeteer" title="Permalink to this headline">¶</a></h2>
-<p>The pupeteer script can be called with the following parameters:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:code:<span class="sb">`</span>ddev <span class="nb">exec</span> node typo3.js --suite<span class="o">=</span>TYPO3CMS-Reference-TCA --limitToTable<span class="o">=</span>tt_content<span class="sb">`</span> --stopOnFirstError<span class="o">=</span><span class="nb">false</span>
+<div class="section" id="run-puppeteer">
+<span id="id1"></span><h1>Run puppeteer<a class="headerlink" href="#run-puppeteer" title="Permalink to this headline">¶</a></h1>
+<p>You can run the pupeteer script in your console as follows:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">ddev</span> <span class="nb">exec</span> <span class="nx">node</span> <span class="nx">typo3</span><span class="o">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">suite</span><span class="o">=</span><span class="nx">TYPO3CMS</span><span class="o">-</span><span class="nx">Tutorial</span><span class="o">-</span><span class="nx">GettingStarted</span>
 </pre></div>
 </div>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt>suite</dt>
-<dd>Name of the manual. The manual must lie at
-<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]</span></code> and the Config.json be found at
-<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]/Scripts/GenerateScreenshots/CreateMappings.sh</span></code></dd>
-<dt>limitToTable</dt>
-<dd>If set only this table will be traversed, useful when testing. If empty all
-tables will be traversed.</dd>
+<dd>Name of the manual. The manual has to lie in public/OriginalManual
+and it has to have a file <code class="file docutils literal notranslate"><span class="pre">Scripts/GenerateScreenshots/Config.json</span></code>
+with the automatic screenshot <a class="reference internal" href="../Configuration/Index.html#configuration"><span class="std std-ref">Configuration</span></a>.</dd>
 <dt>stopOnFirstError</dt>
-<dd>In case of errors should the script keep going and try to do the next
-screenshot (false) or exit (true).</dd>
+<dd>Stop when the first error is found or keep going (default)?</dd>
+<dt>limitToTable</dt>
+<dd>Only take screenshots related to one table. Useful when testing.</dd>
+<dt>limitToImage</dt>
+<dd><p class="first">Only take screenshots Of this one image (without file ending). Useful when testing:</p>
+<div class="last highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">ddev</span> <span class="nb">exec</span> <span class="nx">node</span> <span class="nx">typo3</span><span class="o">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">suite</span><span class="o">=</span><span class="nx">TYPO3CMS</span><span class="o">-</span><span class="nx">Tutorial</span><span class="o">-</span><span class="nx">GettingStarted</span> <span class="o">--</span><span class="nx">limitToImage</span><span class="o">=</span><span class="s2">"BeUsersModule"</span>
+</pre></div>
+</div>
+</dd>
 </dl>
 </div>
 </div>
@@ -145,6 +153,20 @@ screenshot (false) or exit (true).</dd>
 </div>
 </div>
 <!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="../Readme/Index.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../Notes.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
 <!-- /pager.html -->
 </div>
 </div>

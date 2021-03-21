@@ -84,6 +84,12 @@
          "Configuration/ScreenConfiguration.html#confval-filename", 
          "-"
       ], 
+      "iframe": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-iframe", 
+         "-"
+      ], 
       "item": [
          "SIG Screenshots", 
          "1.0", 
@@ -102,6 +108,12 @@
          "Configuration/ActionConfiguration.html#confval-item:box", 
          "-"
       ], 
+      "module": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ModuleConfiguration.html#confval-module", 
+         "-"
+      ], 
       "modules": [
          "SIG Screenshots", 
          "1.0", 
@@ -112,6 +124,18 @@
          "SIG Screenshots", 
          "1.0", 
          "Configuration/ActionConfiguration.html#confval-options", 
+         "-"
+      ], 
+      "overview": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-overview", 
+         "-"
+      ], 
+      "parameter": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ModuleConfiguration.html#confval-parameter", 
          "-"
       ], 
       "paths": [
@@ -132,10 +156,16 @@
          "Configuration/ScreenConfiguration.html#confval-prefix", 
          "-"
       ], 
+      "screen.parameters": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ModuleConfiguration.html#confval-screen.parameters", 
+         "-"
+      ], 
       "screens": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/TableConfiguration.html#confval-screens", 
+         "Configuration/OverviewConfiguration.html#confval-screens", 
          "-"
       ], 
       "screenshot": [
@@ -266,6 +296,12 @@
          "Configuration/ModuleConfiguration.html", 
          "Module configuration"
       ], 
+      "Configuration/OverviewConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/OverviewConfiguration.html", 
+         "Overview configuration"
+      ], 
       "Configuration/Parameters": [
          "SIG Screenshots", 
          "1.0", 
@@ -314,6 +350,12 @@
          "Readme/Index.html", 
          "README"
       ], 
+      "Run/Index": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Run/Index.html", 
+         "Run puppeteer"
+      ], 
       "Targets/Targets": [
          "SIG Screenshots", 
          "1.0", 
@@ -340,6 +382,12 @@
          "Configuration/ActionConfiguration.html#action-configuration", 
          "Action configuration"
       ], 
+      "compare": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Compare/Index.html#compare", 
+         "Compare and copy files"
+      ], 
       "configuration": [
          "SIG Screenshots", 
          "1.0", 
@@ -349,8 +397,8 @@
       "extension_configuration": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ModuleConfiguration.html#extension-configuration", 
-         "Module configuration"
+         "Configuration/OverviewConfiguration.html#extension-configuration", 
+         "Overview configuration"
       ], 
       "field_configuration": [
          "SIG Screenshots", 
@@ -375,6 +423,12 @@
          "1.0", 
          "Configuration/Parameters.html#parameters", 
          "Parameters"
+      ], 
+      "run-puppeteer": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Run/Index.html#run-puppeteer", 
+         "Run puppeteer"
       ], 
       "screen_configuration": [
          "SIG Screenshots", 

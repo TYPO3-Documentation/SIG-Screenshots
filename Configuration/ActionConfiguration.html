@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-20T16:53:27+00:00" name="docsearch:modified"/>
+<meta content="2021-03-21T13:05:25+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-20T16:53:27+00:00" name="dc.modified"/>
-<meta content="2021-03-20T16:53:27+00:00" property="article:modified_time"/>
+<meta content="2021-03-21T13:05:25+00:00" name="dc.modified"/>
+<meta content="2021-03-21T13:05:25+00:00" property="article:modified_time"/>
 <title>Action configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -76,6 +76,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Readme/Index.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Run/Index.html">Run puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html">Changed for puppeteer implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
@@ -331,16 +332,8 @@ with a wait so everything is drawn before taking the screenshot</p>
 </pre></div>
 </div>
 <div class="figure">
-<img alt="../_images/ActionDraw.png" src="../_images/ActionDraw.png"/>
+<img alt="../_images/ActionDraw.png" class="with-shadow" src="../_images/ActionDraw.png"/>
 </div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Class:</th><td class="field-body">with-shadow</td>
-</tr>
-</tbody>
-</table>
 <p>An orange box around the selector</p>
 </dd></dl>
 <dl class="confval">
@@ -368,17 +361,77 @@ with a wait so everything is drawn before taking the screenshot</p>
 </pre></div>
 </div>
 <div class="figure">
-<img alt="../_images/ActionDrawArrow.png" src="../_images/ActionDrawArrow.png"/>
+<img alt="../_images/ActionDrawArrow.png" class="with-shadow" src="../_images/ActionDrawArrow.png"/>
 </div>
-<table class="docutils field-list" frame="void" rules="none">
+<p>An orange box around the selector</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-item:arrow">
+<code class="descname">item:arrow</code><a class="headerlink" href="#confval-item:arrow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name"/>
 <col class="field-body"/>
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Class:</th><td class="field-body">with-shadow</td>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">false</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
 </tr>
 </tbody>
 </table>
-<p>An orange box around the selector</p>
+<p>Draw an orange label near the selector. You can specifiy the
+content of the label. No more then two chars.</p>
+<p>Draw a label with the content <code class="code docutils literal notranslate"><span class="pre">1</span></code> near the active menu in the sidebar.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"draw"</span><span class="p">,</span>
+   <span class="nt">"item"</span><span class="p">:</span> <span class="s2">"label"</span><span class="p">,</span>
+   <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">".modulemenu-action-active"</span><span class="p">,</span>
+   <span class="nt">"content"</span><span class="p">:</span> <span class="s2">"1"</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="figure">
+<img alt="../_images/ActionDrawArrow.png" class="with-shadow" src="../_images/ActionDrawArrow.png"/>
+</div>
+<p>A numbered label box around the selector</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-selector">
+<code class="descname">selector</code><a class="headerlink" href="#confval-selector" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Which jQuery selctor should the guide be attached to?</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-iframe">
+<code class="descname">iframe</code><a class="headerlink" href="#confval-iframe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Which iFrame is the selctor found in - if any?</p>
+<p>Example, draw a box around the sector in the content iframe:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">"action"</span><span class="o">:</span> <span class="s2">"draw"</span><span class="p">,</span>
+   <span class="s2">"item"</span><span class="o">:</span> <span class="s2">"box"</span><span class="p">,</span>
+   <span class="s2">"selector"</span><span class="o">:</span> <span class="s2">".mySelector"</span><span class="p">,</span>
+   <span class="s2">"iframe"</span><span class="o">:</span> <span class="s2">"iframe#typo3-contentIframe"</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </dd></dl>
 </div>
 <div class="section" id="action-hide">
@@ -543,11 +596,11 @@ Contains the selector</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/11bcf9ea5ee114694e6f10633d033133e926ae39" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 20, 2021 16:53
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/2336cdaae1713bbc8378a7ebb1b8e6d701a35182" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 21, 2021 13:05
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 20, 2021 16:54</p>
+<p class="text-center">Last rendered: Mar 21, 2021 13:06</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.5.1

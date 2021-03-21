@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-03-21T13:05:25+00:00" name="dc.modified"/>
 <meta content="2021-03-21T13:05:25+00:00" property="article:modified_time"/>
-<title>Parameters — SIG Screenshots 1.0.0 documentation</title>
+<title>Overview configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -80,8 +80,8 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Parameters</a><ul>
-<li><a class="reference internal" href="#pupeteer">Pupeteer</a></li>
+<li><a class="reference internal" href="#">Overview configuration</a><ul>
+<li><a class="reference internal" href="#example-take-screenshots-of-the-user-module-in-overview">Example: Take screenshots of the user module in overview</a></li>
 </ul>
 </li>
 </ul>
@@ -98,18 +98,18 @@
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Parameters</li>
+<li aria-current="page" class="breadcrumb-item active">Overview configuration</li>
 </ol>
 <div class="breadcrumb-additions">
 <a class="btn btn-sm btn-primary" href="https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/GitHub/" id="btnHowToEdit" rel="nofollow noopener" style="display:none" target="_blank">
 <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
 <span class="btn-text">How to edit</span>
 </a>
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/Parameters.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/OverviewConfiguration.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/Parameters.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/OverviewConfiguration.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -119,26 +119,84 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="parameters">
-<span id="id1"></span><h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="pupeteer">
-<h2>Pupeteer<a class="headerlink" href="#pupeteer" title="Permalink to this headline">¶</a></h2>
-<p>The pupeteer script can be called with the following parameters:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:code:<span class="sb">`</span>ddev <span class="nb">exec</span> node typo3.js --suite<span class="o">=</span>TYPO3CMS-Reference-TCA --limitToTable<span class="o">=</span>tt_content<span class="sb">`</span> --stopOnFirstError<span class="o">=</span><span class="nb">false</span>
+<div class="section" id="overview-configuration">
+<span id="extension-configuration"></span><h1>Overview configuration<a class="headerlink" href="#overview-configuration" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Overview Screenshots should have a viewport width from at least 990px. Otherwise
+TYPO3 Backend jumps into mobile view and has a black overlay.</p>
+</div>
+<p>The overview configuration is an object with the following parameters:</p>
+<dl class="confval">
+<dt id="confval-screens">
+<code class="descname">screens</code><a class="headerlink" href="#confval-screens" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of <a class="reference internal" href="ScreenConfiguration.html#screen-configuration"><span class="std std-ref">screen configurations</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>Each screen is used for one or more screenshots.</p>
+</dd></dl>
+<div class="section" id="example-take-screenshots-of-the-user-module-in-overview">
+<h2>Example: Take screenshots of the user module in overview<a class="headerlink" href="#example-take-screenshots-of-the-user-module-in-overview" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<img alt="Take screenshots of the user module in overview" class="with-shadow" src="../_images/BeUsersModule.png"/>
+<p class="caption"><span class="caption-text">Take screenshots of the user module in overview</span></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"overview": [
+     {
+       "screens": [
+         {
+           "filename": "BeUsersModule",
+           "caption": "SYSTEM &gt; Backend users",
+           "viewport": {
+             "width": 1024,
+             "height": 640
+           },
+           "actions": [
+             {
+               "action": "click",
+               "button": "Backend Users"
+             },
+             {
+               "action": "wait",
+               "timeout": 1000
+             },
+             {
+               "action": "draw",
+               "item": "label",
+               "selector": ".modulemenu-action-active",
+               "content": "1"
+             },
+             {
+               "action": "draw",
+               "item": "box",
+               "selector": ".module-docheader-bar-navigation .module-docheader-bar-column-left select",
+               "iframe": "iframe#typo3-contentIframe"
+             },
+             {
+               "action": "draw",
+               "item": "label",
+               "selector": ".module-docheader-bar-navigation .module-docheader-bar-column-left",
+               "content": "2",
+               "iframe": "iframe#typo3-contentIframe"
+             },
+             {
+               "action": "wait",
+               "timeout": 100
+             }
+           ]
+         }
+       ]
+     }
+]
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>suite</dt>
-<dd>Name of the manual. The manual must lie at
-<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]</span></code> and the Config.json be found at
-<code class="file docutils literal notranslate"><span class="pre">public/OriginalManual/[SuiteName]/Scripts/GenerateScreenshots/CreateMappings.sh</span></code></dd>
-<dt>limitToTable</dt>
-<dd>If set only this table will be traversed, useful when testing. If empty all
-tables will be traversed.</dd>
-<dt>stopOnFirstError</dt>
-<dd>In case of errors should the script keep going and try to do the next
-screenshot (false) or exit (true).</dd>
-</dl>
 </div>
 </div>
 <!-- /body -->

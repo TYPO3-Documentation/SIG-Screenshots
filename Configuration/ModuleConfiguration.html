@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-03-20T16:53:27+00:00" name="docsearch:modified"/>
+<meta content="2021-03-21T13:05:25+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-03-20T16:53:27+00:00" name="dc.modified"/>
-<meta content="2021-03-20T16:53:27+00:00" property="article:modified_time"/>
+<meta content="2021-03-21T13:05:25+00:00" name="dc.modified"/>
+<meta content="2021-03-21T13:05:25+00:00" property="article:modified_time"/>
 <title>Module configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -73,13 +73,17 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Readme/Index.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Run/Index.html">Run puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html">Changed for puppeteer implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Notes.html#todo-to-set-up-puppeteer">Todo to set up puppeteer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Module configuration</a></li>
+<li><a class="reference internal" href="#">Module configuration</a><ul>
+<li><a class="reference internal" href="#example-take-screenshots-of-the-user-module-in-overview">Example: Take screenshots of the user module in overview</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -117,8 +121,119 @@
 <!-- body -->
 <div class="section" id="module-configuration">
 <span id="extension-configuration"></span><h1>Module configuration<a class="headerlink" href="#module-configuration" title="Permalink to this headline">¶</a></h1>
-<p>The module configuration is still WIP and subject to change.</p>
 <p>The module configuration is an object with the following parameters:</p>
+<dl class="confval">
+<dt id="confval-module">
+<code class="descname">module</code><a class="headerlink" href="#confval-module" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+<p>Path to the backend module.</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-screens">
+<code class="descname">screens</code><a class="headerlink" href="#confval-screens" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of <a class="reference internal" href="ScreenConfiguration.html#screen-configuration"><span class="std std-ref">screen configurations</span></a></td>
+</tr>
+</tbody>
+</table>
+<p>Each screen is used for one or more screenshots. Each screen has to have
+parameters definition addionally</p>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-screen.parameters">
+<code class="descname">screen.parameters</code><a class="headerlink" href="#confval-screen.parameters" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of parameter</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-parameter">
+<code class="descname">parameter</code><a class="headerlink" href="#confval-parameter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object</td>
+</tr>
+</tbody>
+</table>
+<p>An object with key (parameter name) and value.</p>
+<p>Example:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">"key"</span><span class="o">:</span> <span class="s2">"tx_beuser_system_beusertxbeuser[action]"</span><span class="p">,</span>
+   <span class="s2">"value"</span><span class="o">:</span> <span class="s2">"index"</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+<div class="section" id="example-take-screenshots-of-the-user-module-in-overview">
+<h2>Example: Take screenshots of the user module in overview<a class="headerlink" href="#example-take-screenshots-of-the-user-module-in-overview" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<img alt="Take screenshots of the user module in overview" class="with-shadow" src="../_images/BeUsersModule.png"/>
+<p class="caption"><span class="caption-text">Take screenshots of the user module in overview</span></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"modules": [
+   {
+    "module": "/module/system/BeuserTxBeuser",
+    "screens": [
+      {
+        "filename": "BeUserGroups",
+        "caption": "Viewing groups in the Backend Users module",
+        "viewport": {
+          "width": 960,
+          "height": 640
+        },
+        "parameters": [
+          {
+            "key": "tx_beuser_system_beusertxbeuser[action]",
+            "value": "index"
+          },
+          {
+            "key": "tx_beuser_system_beusertxbeuser[controller]",
+            "value": "BackendUserGroup"
+          }
+        ],
+        "actions": [
+          {
+            "action": "click",
+            "select": "selector",
+            "selector": "select"
+          },
+          {
+            "action": "wait",
+            "timeout": 100
+          }
+        ]
+      }
+    ]
+   }
+]
+</pre></div>
+</div>
+</div>
 </div>
 <!-- /body -->
 </div>
@@ -137,11 +252,11 @@
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/11bcf9ea5ee114694e6f10633d033133e926ae39" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Mar 20, 2021 16:53
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/2336cdaae1713bbc8378a7ebb1b8e6d701a35182" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Mar 21, 2021 13:05
                         </a>
 </p>
-<p class="text-center">Last rendered: Mar 20, 2021 16:54</p>
+<p class="text-center">Last rendered: Mar 21, 2021 13:06</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.5.1
