@@ -1,5 +1,5 @@
 {
-  "build_time": "2021-03-26 13:46:00",
+  "build_time": "2021-03-28 16:42:31",
   "checksum": "b32e93fde000bd8bfa64defedfdb1e6a",
   "checksum_ttl_seconds": 604800,
   "copyright": "2021",
@@ -12,8 +12,8 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:latest",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v2.8.0",
-    "THEME_MTIME": "1588954791",
+    "OUR_IMAGE_VERSION": "v2.8.2",
+    "THEME_MTIME": "1616756420",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
     "TOOLCHAIN_VERSION": "2.11.1",
@@ -31,11 +31,11 @@
   "t3author": "TYPO3 Documentation SIG Screenshots",
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1615656120",
+    "build_mtime": "1616763510",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.5.1",
+    "version_scm": "4.5.2",
     "version_scm_build": "",
-    "version_scm_core": "4.5.1",
+    "version_scm_core": "4.5.2",
     "version_scm_pre_release": ""
   },
   "version": "1.0"
