@@ -10,6 +10,7 @@ Configuration/Parameters.html
 Configuration/ScreenConfiguration.html
 Configuration/SelectConfiguration.html
 Configuration/Settings.html
+Configuration/SourceFileConfiguration.html
 Configuration/TableConfiguration.html
 Install/Index.html
 Notes.html

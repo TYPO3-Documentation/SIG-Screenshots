@@ -10,6 +10,7 @@
 ./Documentation/Configuration/OverviewConfiguration.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/Parameters.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/Settings.rst: WARNING: document isn't included in any toctree
+./Documentation/Configuration/SourceFileConfiguration.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/ActionConfiguration.rst:36: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ActionConfiguration.rst:24: WARNING: undefined label: action_accordion (if the link has no caption the label must precede a section header)
 ./Documentation/Configuration/ActionConfiguration.rst:71: WARNING: 'class' reference target not found: string
@@ -60,6 +61,8 @@
 ./Documentation/Configuration/SelectConfiguration.rst:65: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/SelectConfiguration.rst:65: WARNING: 'class' reference target not found: select configuration
 ./Documentation/Configuration/SelectConfiguration.rst:: WARNING: 'class' reference target not found: string
+./Documentation/Configuration/SourceFileConfiguration.rst:16: WARNING: 'class' reference target not found: object containing the paths
+./Documentation/Configuration/SourceFileConfiguration.rst:22: WARNING: 'class' reference target not found: array of the file configurations
 ./Documentation/Configuration/TableConfiguration.rst:: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/TableConfiguration.rst:81: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ActionConfiguration.rst:51: WARNING: Could not lex literal_block as "json". Highlighting skipped.
@@ -80,4 +83,5 @@
 ./Documentation/Configuration/SelectConfiguration.rst:26: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/SelectConfiguration.rst:45: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/SelectConfiguration.rst:54: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/SourceFileConfiguration.rst:26: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/TableConfiguration.rst:38: WARNING: Could not lex literal_block as "json". Highlighting skipped.

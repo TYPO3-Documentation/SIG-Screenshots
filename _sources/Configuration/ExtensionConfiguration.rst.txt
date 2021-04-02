@@ -57,3 +57,13 @@ The extension configuration is an object with the following parameters:
 
    Takes screenshots of TCA elements such as table lists, records, or
    single fields therein.
+
+
+.. confval:: sourceFiles
+
+   :Required: false
+   :type:  array of :ref:`source files configurations <source_file_configuration>`
+
+   Copies files from the source code of an extension to provide code
+   snippets
+

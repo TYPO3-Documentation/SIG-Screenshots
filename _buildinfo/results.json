@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-03-28 16:42:31",
-  "checksum": "b32e93fde000bd8bfa64defedfdb1e6a",
+  "build_time": "2021-04-02 09:27:13",
+  "checksum": "1c74bc13e8d96fd31c1fa35c69fb5c74",
   "checksum_ttl_seconds": 604800,
   "copyright": "2021",
   "created": {
@@ -12,7 +12,7 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:latest",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v2.8.2",
+    "OUR_IMAGE_VERSION": "v2.8.3",
     "THEME_MTIME": "1616756420",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
@@ -23,11 +23,11 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 21,
+  "postprocessed_html_files": 22,
   "project": "SIG Screenshots",
   "publish_dir": "project/0.0.0",
   "release": "1.0.0",
-  "sitemap_files_html_count": 21,
+  "sitemap_files_html_count": 22,
   "t3author": "TYPO3 Documentation SIG Screenshots",
   "ter_extension": "0",
   "theme_info": {

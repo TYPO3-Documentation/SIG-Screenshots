@@ -11,7 +11,7 @@
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
 <meta content="2021-04-02T09:26:31+00:00" name="dc.modified"/>
 <meta content="2021-04-02T09:26:31+00:00" property="article:modified_time"/>
-<title>Settings — SIG Screenshots 1.0.0 documentation</title>
+<title>Source file configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -82,7 +82,10 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Settings</a></li>
+<li><a class="reference internal" href="#">Source file configuration</a><ul>
+<li><a class="reference internal" href="#example-copy-a-userfunction-file">Example: copy a Userfunction file</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -97,18 +100,18 @@
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Settings</li>
+<li aria-current="page" class="breadcrumb-item active">Source file configuration</li>
 </ol>
 <div class="breadcrumb-additions">
 <a class="btn btn-sm btn-primary" href="https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
 <span class="btn-text">How to edit</span>
 </a>
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/Settings.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/SIG-Screenshots/edit/main/Documentation/Configuration/SourceFileConfiguration.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/Settings.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Configuration/SourceFileConfiguration.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -118,27 +121,61 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="settings">
-<span id="id1"></span><h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
-<p>These are the standard settings:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">settings</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="nx">baseUrl</span><span class="o">:</span> <span class="s1">'http://localhost'</span><span class="p">,</span>
-  <span class="nx">suite</span><span class="o">:</span> <span class="s1">'TYPO3CMS-Reference-TCA'</span><span class="p">,</span>
-  <span class="nx">viewPort</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">width</span><span class="o">:</span> <span class="mi">640</span><span class="p">,</span>
-    <span class="nx">height</span><span class="o">:</span> <span class="mi">640</span>
-  <span class="p">},</span>
-  <span class="nx">errorPath</span><span class="o">:</span> <span class="s1">'public/Output/Errors/'</span><span class="p">,</span>
-  <span class="nx">mappingsPath</span><span class="o">:</span> <span class="s1">'./public/Output/json/'</span><span class="p">,</span>
-  <span class="nx">limitToTable</span><span class="o">:</span> <span class="s1">''</span><span class="p">,</span>
-  <span class="nx">stopOnFirstError</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nx">standardTimeoutTime</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
-  <span class="nx">snippet</span><span class="o">:</span> <span class="s1">'include'</span>
-<span class="p">};</span>
+<div class="section" id="source-file-configuration">
+<span id="id1"></span><h1>Source file configuration<a class="headerlink" href="#source-file-configuration" title="Permalink to this headline">¶</a></h1>
+<p>Copies source files of an extension to provide snippets</p>
+<dl class="confval">
+<dt id="confval-paths">
+<code class="descname">paths</code><a class="headerlink" href="#confval-paths" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">object containing the paths</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="confval">
+<dt id="confval-copy">
+<code class="descname">copy</code><a class="headerlink" href="#confval-copy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"/>
+<col class="field-body"/>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">true</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body">array of the file configurations</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<div class="section" id="example-copy-a-userfunction-file">
+<h2>Example: copy a Userfunction file<a class="headerlink" href="#example-copy-a-userfunction-file" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"sourceFiles": [
+    {
+      "paths": {
+        "codeSource": "Documentation/Includes/Snippets/Styleguide/Sources/UserFunctions/",
+        "relativeCodeSource": "/Includes/Snippets/Styleguide/Sources/UserFunctions/",
+        "source": "typo3conf/ext/styleguide/Classes/UserFunctions/FormEngine/"
+      },
+      "copy": [
+        {
+          "from": "SelectItemSorter.php",
+          "removes": [
+            {
+              "remove": "comments"
+            }
+          ]
+        }
+      ]
+    }
+],
 </pre></div>
 </div>
-<p>The settings can be overridden by <a class="reference internal" href="Parameters.html#parameters"><span class="std std-ref">parameters</span></a> to the calls or
-by adding the settings to the root array in the <a class="reference internal" href="Index.html#configuration"><span class="std std-ref">Config.json file</span></a>.</p>
+</div>
 </div>
 <!-- /body -->
 </div>

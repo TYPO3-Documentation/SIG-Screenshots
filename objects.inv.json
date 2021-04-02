@@ -54,6 +54,12 @@
          "Configuration/ConfigFile.html#confval-comments", 
          "-"
       ], 
+      "copy": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SourceFileConfiguration.html#confval-copy", 
+         "-"
+      ], 
       "extension": [
          "SIG Screenshots", 
          "1.0", 
@@ -204,6 +210,12 @@
          "Configuration/ScreenConfiguration.html#confval-snippet", 
          "-"
       ], 
+      "sourceFiles": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ExtensionConfiguration.html#confval-sourceFiles", 
+         "-"
+      ], 
       "tab": [
          "SIG Screenshots", 
          "1.0", 
@@ -325,6 +337,12 @@
          "1.0", 
          "Configuration/Settings.html", 
          "Settings"
+      ], 
+      "Configuration/SourceFileConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SourceFileConfiguration.html", 
+         "Source file configuration"
       ], 
       "Configuration/TableConfiguration": [
          "SIG Screenshots", 
@@ -453,6 +471,12 @@
          "1.0", 
          "Configuration/Settings.html#settings", 
          "Settings"
+      ], 
+      "source_file_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/SourceFileConfiguration.html#source-file-configuration", 
+         "Source file configuration"
       ], 
       "table_configuration": [
          "SIG Screenshots", 
