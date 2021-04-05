@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-04-05 12:41:08",
-  "checksum": "004b3e46c7fab51e358e58cd51713996",
+  "build_time": "2021-04-05 13:03:16",
+  "checksum": "6f25f588c41e0e362dfb6df3478058cc",
   "checksum_ttl_seconds": 604800,
   "copyright": "2021",
   "created": {
@@ -23,11 +23,11 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 22,
+  "postprocessed_html_files": 23,
   "project": "SIG Screenshots",
   "publish_dir": "project/0.0.0",
   "release": "1.0.0",
-  "sitemap_files_html_count": 22,
+  "sitemap_files_html_count": 23,
   "t3author": "TYPO3 Documentation SIG Screenshots",
   "ter_extension": "0",
   "theme_info": {

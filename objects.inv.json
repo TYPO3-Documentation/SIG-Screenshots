@@ -21,7 +21,7 @@
       "actions": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-actions", 
+         "Configuration/FieldConfiguration.html#confval-actions", 
          "-"
       ], 
       "button": [
@@ -39,13 +39,13 @@
       "caption": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-caption", 
+         "Configuration/FieldConfiguration.html#confval-caption", 
          "-"
       ], 
       "clip": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-clip", 
+         "Configuration/FieldConfiguration.html#confval-clip", 
          "-"
       ], 
       "comments": [
@@ -87,7 +87,7 @@
       "filename": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-filename", 
+         "Configuration/FieldConfiguration.html#confval-filename", 
          "-"
       ], 
       "iframe": [
@@ -183,7 +183,7 @@
       "screenshot": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-screenshot", 
+         "Configuration/FieldConfiguration.html#confval-screenshot", 
          "-"
       ], 
       "select": [
@@ -201,7 +201,7 @@
       "selector": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-selector", 
+         "Configuration/FieldConfiguration.html#confval-selector", 
          "-"
       ], 
       "settings": [
@@ -213,7 +213,7 @@
       "snippet": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/ScreenConfiguration.html#confval-snippet", 
+         "Configuration/FieldConfiguration.html#confval-snippet", 
          "-"
       ], 
       "sourceFiles": [
@@ -250,6 +250,12 @@
          "SIG Screenshots", 
          "1.0", 
          "Configuration/ActionConfiguration.html#confval-timeout", 
+         "-"
+      ], 
+      "type": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/LoginConfiguration.html#confval-type", 
          "-"
       ], 
       "uid": [
@@ -307,6 +313,12 @@
          "1.0", 
          "Configuration/Index.html", 
          "Configuration"
+      ], 
+      "Configuration/LoginConfiguration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/LoginConfiguration.html", 
+         "Login configuration"
       ], 
       "Configuration/ModuleConfiguration": [
          "SIG Screenshots", 

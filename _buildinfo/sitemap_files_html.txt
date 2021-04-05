@@ -4,6 +4,7 @@ Configuration/ConfigFile.html
 Configuration/ExtensionConfiguration.html
 Configuration/FieldConfiguration.html
 Configuration/Index.html
+Configuration/LoginConfiguration.html
 Configuration/ModuleConfiguration.html
 Configuration/OverviewConfiguration.html
 Configuration/Parameters.html

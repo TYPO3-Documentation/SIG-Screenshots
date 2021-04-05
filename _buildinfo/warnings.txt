@@ -3,7 +3,13 @@
 ./Documentation/Configuration/ActionConfiguration.rst:259: WARNING: Definition list ends without a blank line; unexpected unindent.
 ./Documentation/Configuration/ActionConfiguration.rst:6: WARNING: Duplicate ID: "confval-selector".
 ./Documentation/Configuration/Index.rst:6: WARNING: duplicate label configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/ConfigFile.rst
-./Documentation/Configuration/ModuleConfiguration.rst:6: WARNING: duplicate label extension_configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/ExtensionConfiguration.rst
+./Documentation/Configuration/LoginConfiguration.rst:36: WARNING: Problems with "include" directive path:
+InputError: [Errno 2] No such file or directory: '/ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Includes/Images/RstIncludes/LoginPage.rst.txt'.
+./Documentation/Configuration/LoginConfiguration.rst:61: WARNING: Problems with "include" directive path:
+InputError: [Errno 2] No such file or directory: '/ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Includes/Images/RstIncludes/LoginFullscreen.rst.txt'.
+./Documentation/Configuration/LoginConfiguration.rst:6: WARNING: duplicate label extension_configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/ExtensionConfiguration.rst
+./Documentation/Configuration/ModuleConfiguration.rst:6: WARNING: duplicate label extension_configuration, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/Configuration/LoginConfiguration.rst
+./Documentation/Configuration/LoginConfiguration.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/Parameters.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/Settings.rst: WARNING: document isn't included in any toctree
 ./Documentation/Configuration/ActionConfiguration.rst:36: WARNING: 'class' reference target not found: string
@@ -36,6 +42,7 @@
 ./Documentation/Configuration/FieldConfiguration.rst:77: WARNING: 'class' reference target not found: object
 ./Documentation/Configuration/FieldConfiguration.rst:95: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/FieldConfiguration.rst:105: WARNING: 'class' reference target not found: string
+./Documentation/Configuration/LoginConfiguration.rst:32: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ModuleConfiguration.rst:: WARNING: 'class' reference target not found: string
 ./Documentation/Configuration/ModuleConfiguration.rst:30: WARNING: 'class' reference target not found: array of parameter
 ./Documentation/Configuration/ModuleConfiguration.rst:: WARNING: 'class' reference target not found: object
@@ -69,6 +76,8 @@
 ./Documentation/Configuration/ConfigFile.rst:17: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ExtensionConfiguration.rst:25: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/FieldConfiguration.rst:72: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/LoginConfiguration.rst:38: WARNING: Could not lex literal_block as "json". Highlighting skipped.
+./Documentation/Configuration/LoginConfiguration.rst:63: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ModuleConfiguration.rst:51: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/OverviewConfiguration.rst:27: WARNING: Could not lex literal_block as "json". Highlighting skipped.
 ./Documentation/Configuration/ScreenConfiguration.rst:59: WARNING: Could not lex literal_block as "json". Highlighting skipped.
