@@ -171,3 +171,103 @@ The screen configuration is an object with the following parameters:
    .. code-block:: json
 
       "viewport": {"width": 960, "height": 640}
+
+Examples
+========
+
+Screenshot of a table
+=====================
+
+.. include:: /Includes/Images/RstIncludes/Table.rst.txt
+
+
+.. code-block:: json
+
+    {
+        "table": "be_groups",
+        "screens": [
+            {
+                "view": "table",
+                "pid": 0,
+                "selector": ".recordlist",
+                "filename": "Table",
+                "actions": [
+                    {
+                        "action": "draw",
+                        "item": "box",
+                        "selector": "tbody .btn-default:first"
+                    },
+                    {
+                        "action": "draw",
+                        "item": "arrow",
+                        "selector": "tbody .btn-default:first"
+                    },
+                    {
+                        "action": "wait",
+                        "timeout": 100
+                    }
+                ]
+            }
+        ]
+    }
+
+
+Screenshot of a record
+======================
+
+.. include:: /Includes/Images/RstIncludes/Record.rst.txt
+
+.. code-block:: json
+
+    {
+        "table": "be_users",
+        "screens": [
+            {
+                "view": "record",
+                "selectRecord": {
+                    "by": "username",
+                    "username": "styleguide demo user 1"
+                },
+                "actions": [
+                    {
+                        "action": "click",
+                        "select": "lang"
+                    },
+                    {
+                        "action": "hide",
+                        "selector": ".module-docheader"
+                    }
+                ],
+                "selector": "",
+                "filename": "Record",
+                "caption": "Setting the default language for a new backend user"
+            }
+        ]
+    }
+
+Screenshot of a field
+=====================
+
+.. include:: /Includes/Images/RstIncludes/Field.rst.txt
+
+.. code-block:: json
+
+    {
+        "table": "be_groups",
+        "screens": [
+            {
+                "view": "fields",
+                "selectRecord": {
+                    "by": "title",
+                    "title": "Advanced editors"
+                }
+            }
+        ]
+        "fields": [
+            {
+                "field": "allowed_languages",
+                "filename": "Field",
+                "caption": "Setting permissions for languages"
+            }
+        ]
+    }

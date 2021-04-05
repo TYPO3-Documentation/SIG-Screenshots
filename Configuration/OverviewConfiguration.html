@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-04-02T09:26:31+00:00" name="docsearch:modified"/>
+<meta content="2021-04-05T12:40:31+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-04-02T09:26:31+00:00" name="dc.modified"/>
-<meta content="2021-04-02T09:26:31+00:00" property="article:modified_time"/>
+<meta content="2021-04-05T12:40:31+00:00" name="dc.modified"/>
+<meta content="2021-04-05T12:40:31+00:00" property="article:modified_time"/>
 <title>Overview configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -20,6 +20,9 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="SIG Screenshots 1.0.0 documentation"/>
+<link href="Index.html" rel="up" title="Configuration"/>
+<link href="ModuleConfiguration.html" rel="next" title="Module configuration"/>
+<link href="ExtensionConfiguration.html" rel="prev" title="Extension configuration"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -61,16 +64,19 @@
 <!-- /searchbox.html -->
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Compare/Index.html">Compare and copy files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Index.html">Configuration</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Overview configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModuleConfiguration.html">Module configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ScreenConfiguration.html">Screen configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SourceFileConfiguration.html">Source file configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
@@ -95,11 +101,14 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="ExtensionConfiguration.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="ModuleConfiguration.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
 <li aria-current="page" class="breadcrumb-item active">Overview configuration</li>
 </ol>
 <div class="breadcrumb-additions">
@@ -122,7 +131,7 @@
 <div itemprop="articleBody">
 <!-- body -->
 <div class="section" id="overview-configuration">
-<span id="extension-configuration"></span><h1>Overview configuration<a class="headerlink" href="#overview-configuration" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Overview configuration<a class="headerlink" href="#overview-configuration" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Overview Screenshots should have a viewport width from at least 990px. Otherwise
@@ -146,9 +155,9 @@ TYPO3 Backend jumps into mobile view and has a black overlay.</p>
 </dd></dl>
 <div class="section" id="example-take-screenshots-of-the-user-module-in-overview">
 <h2>Example: Take screenshots of the user module in overview<a class="headerlink" href="#example-take-screenshots-of-the-user-module-in-overview" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id1">
-<img alt="Take screenshots of the user module in overview" class="with-shadow" src="../_images/BeUsersModule.png"/>
-<p class="caption"><span class="caption-text">Take screenshots of the user module in overview</span></p>
+<div class="figure" id="id2">
+<img alt="SYSTEM &gt; Backend users" class="with-shadow" src="../_images/Overview.png"/>
+<p class="caption"><span class="caption-text">SYSTEM &gt; Backend users</span></p>
 </div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span>"overview": [
      {
@@ -205,6 +214,20 @@ TYPO3 Backend jumps into mobile view and has a black overlay.</p>
 </div>
 </div>
 <!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="ExtensionConfiguration.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="ModuleConfiguration.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
 <!-- /pager.html -->
 </div>
 </div>
@@ -218,11 +241,11 @@ TYPO3 Backend jumps into mobile view and has a black overlay.</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/42e82aa6f6cf2383b3b0ae05ace76643dcf92d6b" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Apr 02, 2021 09:26
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/dd8615c957a0109852ca54819a240005e77f550e" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Apr 05, 2021 12:40
                         </a>
 </p>
-<p class="text-center">Last rendered: Apr 02, 2021 09:27</p>
+<p class="text-center">Last rendered: Apr 05, 2021 12:41</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.5.2

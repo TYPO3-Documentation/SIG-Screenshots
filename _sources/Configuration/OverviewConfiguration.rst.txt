@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. _extension_configuration:
+.. _overview_configuration:
 
 ======================
 Overview configuration
@@ -22,12 +22,7 @@ The overview configuration is an object with the following parameters:
 Example: Take screenshots of the user module in overview
 ========================================================
 
-.. figure:: /Images/BeUsersModule.png
-   :alt: Take screenshots of the user module in overview
-   :class: with-shadow
-
-   Take screenshots of the user module in overview
-
+.. include:: /Includes/Images/RstIncludes/Overview.rst.txt
 
 .. code-block:: json
 

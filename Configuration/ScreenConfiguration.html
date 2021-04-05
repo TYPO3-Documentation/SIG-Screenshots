@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-04-02T09:26:31+00:00" name="docsearch:modified"/>
+<meta content="2021-04-05T12:40:31+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-04-02T09:26:31+00:00" name="dc.modified"/>
-<meta content="2021-04-02T09:26:31+00:00" property="article:modified_time"/>
+<meta content="2021-04-05T12:40:31+00:00" name="dc.modified"/>
+<meta content="2021-04-05T12:40:31+00:00" property="article:modified_time"/>
 <title>Screen configuration — SIG Screenshots 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
@@ -69,11 +69,14 @@
 <li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="ConfigFile.html">Config.json file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ExtensionConfiguration.html">Extension configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OverviewConfiguration.html">Overview configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModuleConfiguration.html">Module configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="TableConfiguration.html">Table level configuration</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Screen configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SelectConfiguration.html">Select configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ActionConfiguration.html">Action configuration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="FieldConfiguration.html">Field configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SourceFileConfiguration.html">Source file configuration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Install/Index.html">INSTALL</a></li>
@@ -85,7 +88,13 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Screen configuration</a></li>
+<li><a class="reference internal" href="#">Screen configuration</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#screenshot-of-a-table">Screenshot of a table</a></li>
+<li><a class="reference internal" href="#screenshot-of-a-record">Screenshot of a record</a></li>
+<li><a class="reference internal" href="#screenshot-of-a-field">Screenshot of a field</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -387,6 +396,107 @@ production.</dd>
 </pre></div>
 </div>
 </dd></dl>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="screenshot-of-a-table">
+<h2>Screenshot of a table<a class="headerlink" href="#screenshot-of-a-table" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id2">
+<img alt="Screenshot of  table be_groups" class="with-shadow" src="../_images/Table.png"/>
+<p class="caption"><span class="caption-text">Screenshot of  table be_groups</span></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">"table"</span><span class="p">:</span> <span class="s2">"be_groups"</span><span class="p">,</span>
+    <span class="nt">"screens"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">"view"</span><span class="p">:</span> <span class="s2">"table"</span><span class="p">,</span>
+            <span class="nt">"pid"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">".recordlist"</span><span class="p">,</span>
+            <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"Table"</span><span class="p">,</span>
+            <span class="nt">"actions"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"draw"</span><span class="p">,</span>
+                    <span class="nt">"item"</span><span class="p">:</span> <span class="s2">"box"</span><span class="p">,</span>
+                    <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">"tbody .btn-default:first"</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"draw"</span><span class="p">,</span>
+                    <span class="nt">"item"</span><span class="p">:</span> <span class="s2">"arrow"</span><span class="p">,</span>
+                    <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">"tbody .btn-default:first"</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"wait"</span><span class="p">,</span>
+                    <span class="nt">"timeout"</span><span class="p">:</span> <span class="mi">100</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="screenshot-of-a-record">
+<h2>Screenshot of a record<a class="headerlink" href="#screenshot-of-a-record" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id3">
+<img alt="Setting the default language for a new backend user" class="with-shadow" src="../_images/Record.png"/>
+<p class="caption"><span class="caption-text">Setting the default language for a new backend user</span></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">"table"</span><span class="p">:</span> <span class="s2">"be_users"</span><span class="p">,</span>
+    <span class="nt">"screens"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">"view"</span><span class="p">:</span> <span class="s2">"record"</span><span class="p">,</span>
+            <span class="nt">"selectRecord"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"by"</span><span class="p">:</span> <span class="s2">"username"</span><span class="p">,</span>
+                <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"styleguide demo user 1"</span>
+            <span class="p">},</span>
+            <span class="nt">"actions"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"click"</span><span class="p">,</span>
+                    <span class="nt">"select"</span><span class="p">:</span> <span class="s2">"lang"</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">"action"</span><span class="p">:</span> <span class="s2">"hide"</span><span class="p">,</span>
+                    <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">".module-docheader"</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">"selector"</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+            <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"Record"</span><span class="p">,</span>
+            <span class="nt">"caption"</span><span class="p">:</span> <span class="s2">"Setting the default language for a new backend user"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="screenshot-of-a-field">
+<h2>Screenshot of a field<a class="headerlink" href="#screenshot-of-a-field" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id4">
+<img alt="Setting permissions for languages" class="with-shadow" src="../_images/Field.png"/>
+<p class="caption"><span class="caption-text">Setting permissions for languages</span></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">"table"</span><span class="p">:</span> <span class="s2">"be_groups"</span><span class="p">,</span>
+    <span class="nt">"screens"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">"view"</span><span class="p">:</span> <span class="s2">"fields"</span><span class="p">,</span>
+            <span class="nt">"selectRecord"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">"by"</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+                <span class="nt">"title"</span><span class="p">:</span> <span class="s2">"Advanced editors"</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+    <span class="s2">"fields"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">"field"</span><span class="p">:</span> <span class="s2">"allowed_languages"</span><span class="p">,</span>
+            <span class="nt">"filename"</span><span class="p">:</span> <span class="s2">"Field"</span><span class="p">,</span>
+            <span class="nt">"caption"</span><span class="p">:</span> <span class="s2">"Setting permissions for languages"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 <!-- /body -->
 </div>
@@ -419,11 +529,11 @@ production.</dd>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/42e82aa6f6cf2383b3b0ae05ace76643dcf92d6b" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Apr 02, 2021 09:26
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/SIG-Screenshots/commit/dd8615c957a0109852ca54819a240005e77f550e" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Apr 05, 2021 12:40
                         </a>
 </p>
-<p class="text-center">Last rendered: Apr 02, 2021 09:27</p>
+<p class="text-center">Last rendered: Apr 05, 2021 12:41</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.5.2

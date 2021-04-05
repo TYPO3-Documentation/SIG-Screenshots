@@ -114,6 +114,12 @@
          "Configuration/ActionConfiguration.html#confval-item:box", 
          "-"
       ], 
+      "item:label": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/ActionConfiguration.html#confval-item:label", 
+         "-"
+      ], 
       "module": [
          "SIG Screenshots", 
          "1.0", 
@@ -415,8 +421,8 @@
       "extension_configuration": [
          "SIG Screenshots", 
          "1.0", 
-         "Configuration/OverviewConfiguration.html#extension-configuration", 
-         "Overview configuration"
+         "Configuration/ModuleConfiguration.html#extension-configuration", 
+         "Module configuration"
       ], 
       "field_configuration": [
          "SIG Screenshots", 
@@ -435,6 +441,12 @@
          "1.0", 
          "py-modindex.html", 
          "Module Index"
+      ], 
+      "overview_configuration": [
+         "SIG Screenshots", 
+         "1.0", 
+         "Configuration/OverviewConfiguration.html#overview-configuration", 
+         "Overview configuration"
       ], 
       "parameters": [
          "SIG Screenshots", 

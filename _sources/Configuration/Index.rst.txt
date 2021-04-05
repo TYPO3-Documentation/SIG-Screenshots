@@ -22,8 +22,11 @@ screenshots and all other files that are generated automatically.
 
    ConfigFile
    ExtensionConfiguration
+   OverviewConfiguration
+   ModuleConfiguration
    TableConfiguration
    ScreenConfiguration
    SelectConfiguration
    ActionConfiguration
    FieldConfiguration
+   SourceFileConfiguration

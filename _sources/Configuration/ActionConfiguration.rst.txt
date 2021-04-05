@@ -168,10 +168,7 @@ Draws a visual guide element in TYPO3 orange.
          }
       ]
 
-   .. figure:: /Images/ActionDraw.png
-      :class: with-shadow
-
-   An orange box around the selector
+   .. include:: /Includes/Images/RstIncludes/ActionDraw.rst.txt
 
 .. confval:: item:arrow
 
@@ -191,13 +188,10 @@ Draws a visual guide element in TYPO3 orange.
          }
       ]
 
-   .. figure:: /Images/ActionDrawArrow.png
-      :class: with-shadow
-
-   An orange box around the selector
+   .. include:: /Includes/Images/RstIncludes/ActionDrawArrow.rst.txt
 
 
-.. confval:: item:arrow
+.. confval:: item:label
 
    :Required: false
    :type: string
@@ -216,10 +210,7 @@ Draws a visual guide element in TYPO3 orange.
          "content": "1"
       }
 
-   .. figure:: /Images/ActionDrawArrow.png
-      :class: with-shadow
-
-   A numbered label box around the selector
+   .. include:: /Includes/Images/RstIncludes/ActionDrawLabel.rst.txt
 
 
 .. confval:: selector

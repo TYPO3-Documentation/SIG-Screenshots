@@ -42,14 +42,10 @@ The module configuration is an object with the following parameters:
          "value": "index"
       }
 
-Example: Take screenshots of the user module in overview
-========================================================
+Example: Take screenshots of the user module
+============================================
 
-.. figure:: /Images/BeUsersModule.png
-   :alt: Take screenshots of the user module in overview
-   :class: with-shadow
-
-   Take screenshots of the user module in overview
+.. include:: /Includes/Images/RstIncludes/Module.rst.txt
 
 
 .. code-block:: json
